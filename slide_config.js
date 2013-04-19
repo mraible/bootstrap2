@@ -12,7 +12,7 @@ var SLIDE_CONFIG = {
     fonts: [
       'Open Sans:regular,semibold,italic,italicsemibold',
       'Inconsolata'
-    ],
+    ]
     //theme: ['mytheme'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
   },
 
@@ -20,9 +20,9 @@ var SLIDE_CONFIG = {
   presenters: [{
     name: 'Matt Raible',
     company: '<a href="http://raibledesigns.com">Raible Designs</a>',
-    gplus: 'https://plus.google.com/110825273667988321966',
+    //gplus: 'https://plus.google.com/110825273667988321966',
     twitter: '@mraible',
-    www: 'http://www.raibledesigns.com',
+    www: 'http://raibledesigns.com',
     github: 'http://github.com/mraible'
   }/*, {
     name: 'Second Name',

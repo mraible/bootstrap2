@@ -499,12 +499,12 @@ ul li ul {
 }
 /* line 343, ../scss/default.scss */
 ul li ul li:before {
-  content: '-';
+  content: '';
   font-weight: 600;
 }
 /* line 350, ../scss/default.scss */
 ul > li:before {
-  content: '·';
+  content: '';
   margin-left: -1em;
   position: absolute;
   font-weight: 600;
@@ -1248,23 +1248,25 @@ article.smaller q:before, article.smaller q:after {
 
 /* line 862, ../scss/default.scss */
 .thank-you-slide {
-  background: #4387fd !important;
+  background-color: #222;
   color: white;
 }
 /* line 866, ../scss/default.scss */
 .thank-you-slide h2 {
   font-size: 60px;
   color: inherit;
+  position: absolute;
+  margin-top: 350px;
 }
 /* line 871, ../scss/default.scss */
 .thank-you-slide article > p {
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 20pt;
 }
 /* line 876, ../scss/default.scss */
 .thank-you-slide > p {
   position: absolute;
-  bottom: 80px;
+  bottom: 40px;
   font-size: 24pt;
   line-height: 1.3;
 }
@@ -1430,10 +1432,16 @@ aside.gdbar img {
     position: absolute;
     left: 0;
     top: 0;
+    background-size: cover;
 }
 
 .hawaii-rainbow {
     background-image: url(http://www.mcginityphoto.com/Nature/Nature/i-4FxxXw3/0/XL/Rainbow%20over%20Lahaina%20Maui-XL.jpg);
+}
+
+.holland-lake {
+    background: #000 url(http://www.mcginityphoto.com/Nature/Nature/i-DshqBgf/0/XL/HLL%20View-XL.jpg);
+    background-size: cover;
 }
 
 .lake-mcdonald {
@@ -1471,7 +1479,7 @@ aside.gdbar img {
     font-weight: bold;
 }
 
-.first aside.gdbar img {
+.first aside.gdbar img, .last aside.gdbar img {
   width: 64px;
   height: 64px;
   float: left;
@@ -1513,8 +1521,12 @@ aside.gdbar img {
     -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
 }
 
-.centered {
-    margin: 50px auto 0 auto;
+.right {
+    float: right;
+}
+
+img.picture.right {
+    margin-right: -60px;
 }
 
 .text-large {
