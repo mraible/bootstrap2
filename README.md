@@ -13,7 +13,7 @@ Speaker Bio
 =======================================================================
 [Matt Raible](http://raibledesigns.com) has been building web applications for most of his adult life. He started tinkering with the web before Netscape 1.0 was even released. For the last 15 years, Matt has helped companies adopt open source technologies (Spring, Hibernate, Apache, Struts, Grails, Bootstrap, jQuery) and use them effectively. Matt has been a speaker at many conferences worldwide, including Devoxx, The Rich Web Experience, Jfokus, No Fluff Just Stuff, and a host of others. 
 
-Matt is an author (Spring Live and Pro JSP), and an active "kick-ass technology" evangelist on raibledesigns.com. He is the founder of AppFuse, a project which allows you to get started quickly with Java open source frameworks, as well as a committer on the Apache Roller and Apache Struts projects. 
+Matt is an author (Spring Live and Pro JSP), and an active "kick-ass technology" evangelist on [raibledesigns.com](http://raibledesigns.com). He is the founder of AppFuse, a project which allows you to get started quickly with Java open source frameworks, as well as a committer on the Apache Roller and Apache Struts projects. 
 
 Matt has had quite a ride in the past few years, serving as the Lead UI Architect for LinkedIn, the UI Architect for Evite.com and the Chief Architect of Web Development at Time Warner Cable. He currently consults as a UI Architect for HTML5 apps at Taleo/Oracle.
 
