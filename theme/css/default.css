@@ -1536,6 +1536,18 @@ img.picture.right {
     font-family: 'Footlight MT Light', sans-serif;
 }
 
+.link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.results {
+    text-align: center;
+    color: green;
+    font-style: italic;
+    margin-top: -20px;
+}
+
 @media print {
   /* line 1014, ../scss/default.scss */
   slides slide {

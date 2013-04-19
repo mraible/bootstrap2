@@ -46,34 +46,33 @@
             </hgroup>
             <article class="smaller">
                 <div class="columns-2">
-                <ul>
-                    <li>Web Architecture Consultant</li>
-                    <li>Java Community Professional</li>
-                    <li>Father, Speaker, Beer Lover</li>
-                    <li>
-                        What Keeps me busy
-                        <ul>
-                            <li>Skiing, Mountain Biking</li>
-                            <li>The Bus</li>
-                            <li><a href="http://appfuse.org">AppFuse</a></li>
-                            <li><a href="http://raibledesigns.com">Raible Designs</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b class="blue">Contact Information</b>
-                        <ul>
-                            <li>www: http://raibledesigns.com</li>
-                            <li>email: matt@raibledesigns.com</li>
-                            <li>twitter: @mraible</li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="pictures">
-                    <img src="images/raibledesigns-logo.png" alt="">
-                    <img src="images/java-logo.png" height="100">
-                    <img src="images/thebus.jpg" height="200" class="picture">
-                </div>
-
+                    <ul>
+                        <li>Web Architecture Consultant</li>
+                        <li>Java Community Professional</li>
+                        <li>Father, Speaker, Beer Lover</li>
+                        <li>
+                            What Keeps me busy
+                            <ul>
+                                <li>Skiing, Mountain Biking</li>
+                                <li>The Bus</li>
+                                <li><a href="http://appfuse.org">AppFuse</a></li>
+                                <li><a href="http://raibledesigns.com">Raible Designs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="blue">Contact Information</b>
+                            <ul>
+                                <li>www: http://raibledesigns.com</li>
+                                <li>email: matt@raibledesigns.com</li>
+                                <li>twitter: @mraible</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="pictures">
+                        <img src="images/raibledesigns-logo.png" alt="">
+                        <img src="images/java-logo.png" height="100">
+                        <img src="images/thebus.jpg" height="200" class="picture">
+                    </div>
                 </div>
             </article>
         </slide>
@@ -130,6 +129,167 @@
         <!--
             I'm here today to tell you about my experience refreshing a UI. Have any of you worked with an outdated design?
 
+        -->
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/html5-logo-128.png">
+            </aside>
+            <img src="http://farm8.staticflickr.com/7159/6777477811_04b9563537_o.png" width="600" class="right">
+            <hgroup class="auto-fadein">
+                <h1>
+                    Legacy Design
+                </h1>
+                <h2>
+                    Have any of you worked with an outdated design?
+                </h2>
+            </hgroup>
+            <aside class="note">
+                <section>
+                    I'm here today to tell you about my experience refreshing a UI.
+                </section>
+            </aside>
+        </slide>
+
+        <slide>
+            <img src="http://www.mcginityphoto.com/Nature/Nature/i-bfxThgg/0/M/Wash%20Park%20Sunset%20May%2029%202012-M.jpg" class="picture right"
+                    style="margin-right: 0">
+            <hgroup>
+                <h2>My Experience</h2>
+            </hgroup>
+            <article>
+                <ul>
+                    <li>December 2011</li>
+                    <li>Page Speed Project</li>
+                    <li>UI Refresh Project</li>
+                    <li>Bootstrap</li>
+                    <li>Legacy Browsers</li>
+                </ul>
+            </article>
+        </slide>
+
+        <!-- Page Speed -->
+        <slide>
+            <hgroup>
+                <h2>Best Practices for Speeding Up Your Web Site</h2>
+            </hgroup>
+            <article class="smaller">
+                <div class="columns-2">
+                    <ul>
+                        <li>Minimize HTTP Requests</li>
+                        <li>Use a Content Delivery Network</li>
+                        <li>Add an Expires or a Cache-Control Header</li>
+                        <li>Gzip Components</li>
+                        <li>Put Stylesheets at the Top</li>
+                        <li>Put Scripts at the Bottom</li>
+                        <li>Avoid CSS Expressions</li>
+                        <li>Make JavaScript and CSS External</li>
+                        <li>Reduce DNS Lookups</li>
+                        <li>Minify JavaScript and CSS</li>
+                        <li>No 404s</li>
+                    </ul>
+                    <ul>
+                        <li>Avoid Redirects</li>
+                        <li>Remove Duplicate Scripts</li>
+                        <li>Configure ETags</li>
+                        <li>Make Ajax Cacheable</li>
+                        <li>Flush the Buffer Early</li>
+                        <li>Use GET for AJAX Requests</li>
+                        <li>Post-load Components</li>
+                        <li>Split Components Across Domains</li>
+                        <li>Optimize Images</li>
+                        <li>Choose &lt;link> over @import</li>
+                        <li>Minimize the Number of iframes</li>
+                    </ul>
+
+                </div>
+                <div class="link">
+                    34 Total Rules &rarr;
+                    <a href="http://developer.yahoo.com/performance/rules.html">
+                        http://developer.yahoo.com/performance/rules.html
+                    </a>
+                </div>
+            </article>
+            <aside class="note">
+                <section>22 Rules shown here</section>
+            </aside>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Page Speed Project</h2>
+            </hgroup>
+            <article class="smaller">
+                <div class="columns-2">
+                    <ul>
+                        <li>YSlow
+                            <ul>
+                                <li>Staging got a B</li>
+                                <li>Production got an F</li>
+                                <li style="font-style: italic">Different Configurations!</li>
+                            </ul>
+                        </li>
+                        <li>Server Recommendations
+                            <ul>
+                                <li>Enable Compression</li>
+                                <li>Add Expires Headers</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Suggested Code Changes
+                            <ul>
+                                <li>Optimizing Images (25% savings)</li>
+                                <li>Reduce HTTP Requests
+                                    <ul>Combining JavaScript Files</ul>
+                                    <ul>CSS Image Sprites</ul>
+                                </li>
+                                <li>JavaScript at Bottom</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="pictures">
+                        <img src="images/google-page-speed.jpg">
+                        <img src="images/yslow-ss.png" width="500" style="margin-top: 25px">
+                    </div>
+                </div>
+            </article>
+            <div class="results">
+                <b>Result:</b> Improved page load by 50%!
+            </div>
+            <aside class="note">
+                <section>
+                    5 to 2.5 seconds
+                </section>
+            </aside>
+        </slide>
+
+        <!-- UI Refresh Project + Bootstrap -->
+        <slide>
+            <hgroup>
+                <h2>UI Refresh Project</h2>
+            </hgroup>
+        </slide>
+
+        <!-- Spike -->
+        <!-- CSS Sprites -->
+
+        <!-- Theme System -->
+        <slide>
+            <hgroup>
+                <h2>Themes with LESS</h2>
+            </hgroup>
+        </slide>
+
+        <!-- Legacy Browsers -->
+        <slide>
+            <hgroup>
+                <h2>Legacy Browsers</h2>
+            </hgroup>
+            <aside class="note">
+                <section>Pairing with Designer and Product Manager was <b>very</b> helpful.</section>
+            </aside>
+        </slide>
+
+        <!--
             http://www.meetup.com/HTML5-Denver-Users-Group/
                 Many startups and open source projects have the luxury of starting greenfield projects.
                 Unfortunately, the corporate world rarely works this way. It's more maintenance coding and a few
@@ -148,6 +308,7 @@
             SMACSS
 
         -->
+
 
 
         <!--
@@ -492,7 +653,7 @@
                         Requirements
                         <ul>
                             <li>HTML5 Doctype</li>
-                            <li>Include Boostrap.css</li>
+                            <li>Include bootstrap.css</li>
                         </ul>
                     </li>
                     <li>
@@ -511,21 +672,6 @@
               </div>
             </article>
         </slide>
-
-        <!--<slide class="title-slide segue nobackground">
-            <aside class="gdbar">
-                <img src="images/bootstrap_128.png">
-            </aside>
-            <hgroup class="auto-fadein">
-                <h1>
-                    Demo Time
-                </h1>
-                <h2>
-                   <a href="http://twitter.github.com/bootstrap/index.html">http://twitter.github.com/bootstrap/index.html</a>
-                </h2>
-            </hgroup>
-        </slide>-->
-
 
         <slide class="title-slide segue nobackground">
             <aside class="gdbar">
@@ -1542,6 +1688,8 @@ Click to toggle popover
 
         <!-- LOOK AND FEEL -->
         <slide>
+            <img src="http://www.mcginityphoto.com/Nature/Colorado/i-pzDkPhV/0/S/Inside%20Coors%20Field-S.jpg"
+                 class="right picture" style="margin-right: 0">
             <hgroup>
                 <h2>Look & Feel</h2>
             </hgroup>
@@ -1579,6 +1727,21 @@ Click to toggle popover
                     </li>
                 </ul>
             </article>
+        </slide>
+
+        <!-- Bootstrap 3 -->
+        <slide>
+            <hgroup>
+                <h2>Bootstrap 3</h2>
+            </hgroup>
+        </slide>
+
+        <!-- SMACSS -->
+        <slide>
+            <img src="images/smacss-book.png" class="right">
+            <hgroup>
+                <h2>SMACSS</h2>
+            </hgroup>
         </slide>
 
         <!-- RESOURCES -->
