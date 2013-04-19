@@ -277,6 +277,7 @@ slides > slide.current .gdbar {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
+  z-index: 100;
 }
 /* line 148, ../scss/default.scss */
 slides > slide.next {
@@ -298,11 +299,11 @@ slides > slide.blue {
 /* line 171, ../scss/default.scss */
 slides > slide:not(.nobackground):before {
   font-size: 12pt;
-  content: "#WebSigCLE";
+  content: "#HTML5Denver";
   position: absolute;
   bottom: 20px;
   left: 60px;
-  background: url(../../images/bootstrap_128.png) no-repeat 0 50%;
+  background: url(../../images/html5-logo-128.png) no-repeat 0 50%;
   -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
@@ -456,7 +457,7 @@ a {
 }
 /* line 307, ../scss/default.scss */
 a:hover {
-  color: black !important;
+  color: black;
 }
 
 /* line 312, ../scss/default.scss */
@@ -1415,6 +1416,112 @@ aside.gdbar img {
 /* line 1007, ../scss/default.scss */
 .overview .slide-area {
   display: none;
+}
+
+/* Custom styles added by @mraible */
+
+.fill {
+    background-size: cover;
+}
+
+.preview {
+    height: 275px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hawaii-rainbow {
+    background-image: url(http://www.mcginityphoto.com/Nature/Nature/i-4FxxXw3/0/XL/Rainbow%20over%20Lahaina%20Maui-XL.jpg);
+}
+
+.lake-mcdonald {
+    background-image: url(http://www.mcginityphoto.com/Nature/Nature/i-W4mgd99/2/X2/_DSC6057-X2.jpg);
+}
+
+.northern-lights {
+    background-image: url(http://www.mcginityphoto.com/Nature/Nature/i-wxd3Bzz/0/XL/DSC_1795-XL.jpg);
+}
+
+.power-lines {
+    background-image: url(../../images/power-lines.jpg);
+}
+
+.the-back-road {
+    background-image: url(../../images/the-back-road.jpg);
+}
+
+.uphill-both-ways {
+    background-image: url(../../images/uphill-both-ways.jpg);
+}
+
+.presenter {
+    z-index: 20;
+}
+
+.photos {
+    margin-right: 60px;
+    position: absolute;
+    right: 0;
+    top: 253px;
+}
+
+.photos a {
+    font-weight: bold;
+}
+
+.first aside.gdbar img {
+  width: 64px;
+  height: 64px;
+  float: left;
+  margin: 15px 3px;
+  position: relative;
+}
+
+.pictures img {
+    display: block;
+    margin: 5px auto;
+}
+
+.pictures .picture:last-child {
+    margin-top: 20px;
+}
+
+.picture {
+    box-shadow: 5px 5px 3px #888;
+    border: 1px solid black;
+}
+
+.picture-credit {
+    font-size: 18px;
+    position: relative;
+    top: 20px
+}
+
+.fill .picture-credit {
+    position: absolute;
+    bottom: 40px;
+    top: auto;
+}
+
+.picture-frame {
+    border: 10px solid white;
+}
+
+.picture-reflection {
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+}
+
+.centered {
+    margin: 50px auto 0 auto;
+}
+
+.text-large {
+    font-size: 250px;
+    color: white;
+    text-align: center;
+    font-family: 'Footlight MT Light', sans-serif;
 }
 
 @media print {
