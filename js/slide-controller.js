@@ -28,7 +28,7 @@ SlideController.prototype.setupDone = function() {
   var presentMe = null;
   for (var i = 0, param; param = params[i]; ++i) {
     if (param[0].toLowerCase() == SlideController.PRESENTER_MODE_PARAM) {
-      presentMe = param[1] == 'true';
+      presentMe = (param[1] == 'true' || param[1] == 'true/');
       break;
     }
   }
