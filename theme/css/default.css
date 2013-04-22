@@ -1541,6 +1541,16 @@ img.picture.right {
     margin-top: 30px;
 }
 
+.list-numbered {
+    list-style: decimal;
+    margin-top: 20px;
+}
+
+.list-numbered li {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
 .results {
     text-align: center;
     color: green;

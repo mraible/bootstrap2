@@ -78,7 +78,7 @@
         </slide>
 
         <!-- Long, Fast Intro -->
-        <slide class="fill nobackground lake-mcdonald">
+        <!--<slide class="fill nobackground lake-mcdonald">
             <article class="text-large">Matt<br/>Raible</article>
         </slide>
 
@@ -124,7 +124,7 @@
             <article class="flexbox vcenter">
                 <img src="images/thebus-640.jpg" class="picture picture-frame">
             </article>
-        </slide>
+        </slide>-->
 
         <!--
             I'm here today to tell you about my experience refreshing a UI. Have any of you worked with an outdated design?
@@ -140,7 +140,7 @@
                     Legacy Design
                 </h1>
                 <h2>
-                    Have any of you worked with an outdated design?
+                    Have you worked with an outdated design?
                 </h2>
             </hgroup>
             <aside class="note">
@@ -152,7 +152,7 @@
 
         <slide>
             <img src="http://www.mcginityphoto.com/Nature/Nature/i-bfxThgg/0/M/Wash%20Park%20Sunset%20May%2029%202012-M.jpg" class="picture right"
-                    style="margin-right: 0">
+                    style="margin-right: 0; margin-top: 80px">
             <hgroup>
                 <h2>My Experience</h2>
             </hgroup>
@@ -268,7 +268,7 @@
                 <h2>UI Refresh Project</h2>
             </hgroup>
             <article class="flexbox vcenter" style="margin-top: 6px">
-                <img src="images/taleo-ui-form-before.jpg">
+                <img src="images/taleo-ui-myview-before.jpg">
             </article>
             <aside class="note">
                 <section>
@@ -287,7 +287,7 @@
                 <h2>UI Refresh Spike</h2>
             </hgroup>
             <article class="flexbox vcenter" style="margin-top: 6px">
-                <img src="images/taleo-ui-form-after.jpg">
+                <img src="images/taleo-ui-myview-after.jpg">
             </article>
             <aside class="note">
                 <section>
@@ -307,9 +307,9 @@
             <hgroup>
                 <h2>CSS Image Sprites</h2>
             </hgroup>
-            <article class="flexbox vcenter" style="margin-top: 6px">
+            <article class="flexbox vcenter" style="margin-top: 16px">
                 <img src="http://farm9.staticflickr.com/8403/8669308528_1ed2c1e44d_z.jpg">
-                <div class="link">
+                <div class="link" style="margin-top: 10px">
                     <a href="http://css-tricks.com/css-sprites/">http://css-tricks.com/css-sprites/</a>
                 </div>
             </article>
@@ -328,9 +328,128 @@
             <hgroup>
                 <h2>Themes with LESS</h2>
             </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="css">
+@link: #0087CC;
+@linkHover: #0087CC;
+
+@border: #608FAF;
+
+@navbarBackground: #D6E7F2;
+@navbarHover: #333333;
+@dropdownBackground: #EFF5F9;
+@dropdownHover: #D6E7F2;
+
+@sidebarBackground: #EFF5F9;
+@headerDarkBackground: #C3EEB7;
+@headerMediumBackground: #D6F3CD;
+@headerLightBackground: #ffffff;
+
+@iconLargeYPosition: -263px;
+@iconYPosition: -718px;
+</pre>
+            </article>
             <aside class="note">
                 Next, I implemented a new theming system with different colors/icons and got everything looking good in Chrome, Safari and IE8/9.
             </aside>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Themes with LESS: theme.less</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="css">
+@import '@colors';
+
+a { color: @link }
+
+a:hover { color: @linkHover }
+
+.navbar div > ul > li {
+    border: 1px solid @border;
+    background-color: @navbarBackground;
+    border-top: 0;
+}
+
+.navbar-inner {
+    border-top: 1px solid @border;
+}
+
+</pre>
+
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Themes with LESS: Ant</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="xml">
+&lt;macrodef name="create-css"&gt;
+    &lt;attribute name="theme"/&gt;
+    &lt;sequential&gt;
+        &lt;echo message="Compiling LESS files :: Creating '@{theme}' Theme"/&gt;
+        &lt;copy description="Setup themes for processing" todir="${build}/themes"&gt;
+            &lt;fileset dir="${basedir}/web/css/UIv9/themes" includes="@{theme}-colors.less"/&gt;
+        &lt;/copy&gt;
+        &lt;concat destfile="${build}/themes/@{theme}.less" eol="dos" force="no"&gt;
+            &lt;fileset dir="${basedir}/web/css/UIv9/themes"&gt;
+                &lt;include name="@{theme}-colors.less"/&gt;
+                &lt;include name="theme.less"/&gt;
+            &lt;/fileset&gt;
+        &lt;/concat&gt;
+        &lt;replace file="${build}/themes/@{theme}.less" token="@import '@colors';" value=""/&gt;
+        <b>&lt;wro4j processor="lessCss" dir="${build}/themes" todir="${basedir}/web/css/UIv9"
+               target-groups="@{theme}"/&gt;</b>
+        &lt;delete dir="${basedir}/web/css/UIv9" includes="**-colors.css"/&gt;
+    &lt;/sequential&gt;
+&lt;/macrodef&gt;
+</pre>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Themes with LESS: Ant</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="xml">
+    &lt;macrodef name="wro4j"&gt;
+        &lt;attribute name="processor"/&gt;
+        &lt;attribute name="wro-file" default="wro.xml"/&gt;
+        &lt;attribute name="target-groups"/&gt;
+        &lt;attribute name="dir"/&gt;
+        &lt;attribute name="todir"/&gt;
+        &lt;sequential&gt;
+            &lt;exec executable="java" failonerror="true"&gt;
+                &lt;arg value="-jar"/&gt;
+                &lt;arg value="../common/lib-ext/wro4j-runner-1.4.4-jar-with-dependencies.jar"/&gt;
+                &lt;arg value="--wroFile"/&gt;
+                &lt;arg value="@{wro-file}"/&gt;
+                &lt;arg value="--contextFolder"/&gt;
+                &lt;arg value="@{dir}"/&gt;
+                &lt;arg value="--targetGroups"/&gt;
+                &lt;arg value="@{target-groups}"/&gt;
+                &lt;arg value="--destinationFolder"/&gt;
+                &lt;arg value="@{todir}"/&gt;
+                &lt;arg value="-c"/&gt;
+                &lt;arg value="@{processor}"/&gt;
+            &lt;/exec&gt;
+        &lt;/sequential&gt;
+    &lt;/macrodef&gt;
+</pre>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Themes with LESS: Customizer</h2>
+            </hgroup>
+            <article class="flexbox vcenter">
+                <img src="images/theme-picker.png" style="margin-left: -60px; margin-top: -20px">
+            </article>
         </slide>
 
         <!-- Legacy Browsers -->
@@ -338,32 +457,25 @@
             <hgroup>
                 <h2>Legacy Browsers</h2>
             </hgroup>
+            <article>
+                <ul style="line-height: 2em" class="build">
+                    <li>No rounded corners or gradients in legacy browsers</li>
+                    <li>Used <a href="https://github.com/bfintal/jQuery.IE9Gradius.js">jQuery.IE9Gradius.js</a> for IE9</li>
+                    <li>Had to add class="checkbox" to all checkbox labels</li>
+                    <li>Many, many IE7 Issues: created ie7.css file
+                        <ul>
+                            <li>Used <code>{ zoom: 1; position: relative }</code> for negative top margins</li>
+                            <li>Used <code>table-layout: fixed</code> so td widths would work in IE7</li>
+                            <li>Used <code>position: fixed</code> to fix nav width</li>
+                            <!--<li><a href="http://theie8countdown.com/">http://theie8countdown.com</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </article>
             <aside class="note">
                 <section>Pairing with Designer and Product Manager was <b>very</b> helpful.</section>
             </aside>
         </slide>
-
-        <!--
-            http://www.meetup.com/HTML5-Denver-Users-Group/
-                Many startups and open source projects have the luxury of starting greenfield projects.
-                Unfortunately, the corporate world rarely works this way. It's more maintenance coding and a few
-                new features every now and then.
-
-            Started with Page Speed
-                Details
-
-            Spike
-            CSS Sprites (spritecow.com)
-            Theme System with LESS
-
-            Handling IE7 and IE8
-            Pairing with Designer and Product Manager
-
-            SMACSS
-
-        -->
-
-
 
         <!--
             Web development Today
@@ -1788,6 +1900,19 @@ Click to toggle popover
             <hgroup>
                 <h2>Bootstrap 3</h2>
             </hgroup>
+            <article>
+                <img src="https://f.cloud.github.com/assets/98681/319244/6f1846e4-98b7-11e2-98a7-c9804916d418.png"
+                     width="500" class="right" style="margin-top: -20px">
+                <ul>
+                    <li>Bootstrap 3 will be mobile-first</li>
+                </ul>
+                <ul class="build" style="line-height: 1.5em">
+                    <li>Overhaul CSS transitions and reinforce with JavaScript transitions as necessary</li>
+                    <li>Dropping IE7 and FF3.6 support</li>
+                    <li>Combining standard and responsive CSS into a single file</li>
+                    <li><a href="https://github.com/twitter/bootstrap/pull/6342">https://github.com/twitter/bootstrap/pull/6342</a></li>
+                </ul>
+            </article>
         </slide>
 
         <!-- SMACSS -->
@@ -1796,6 +1921,122 @@ Click to toggle popover
             <hgroup>
                 <h2>SMACSS</h2>
             </hgroup>
+            <article>
+                Categorizing CSS rules allows us to see patterns and define best practices around each pattern.
+                <ol class="list-numbered">
+                    <li>Base</li>
+                    <li>Layout</li>
+                    <li>Module</li>
+                    <li>State</li>
+                    <li>Theme</li>
+                </ol>
+                <img src="images/smacss-base.png" style="margin-top: 20px; margin-left: 200px;">
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Base rules are the defaults.</li>
+                        <li>Layout rules divide the page into sections.</li>
+                        <li>Modules are the reusable, modular parts of our design.</li>
+                        <li>State rules are ways to describe how our modules or layouts will look when in a particular state.</li>
+                        <li>Theme rules are similar to state rules in that they describe how modules or layouts might look.</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <slide>
+            <img src="images/smacss-book.png" class="right">
+            <hgroup>
+                <h2>SMACSS: Naming Rules</h2>
+            </hgroup>
+            <article>
+                <img src="images/smacss-naming.png" style="margin: -10px 0 20px 10px">
+                <ul style="line-height: 2em">
+                    <li><a href="http://smacss.com/">http://smacss.com</a></li>
+                    <li>Jonathan Snook @ HTML5 Denver:
+                        <a href="http://www.meetup.com/HTML5-Denver-Users-Group/events/93212582/">June 17, 2013!</a></li>
+                </ul>
+            </article>
+            <aside class="note">
+                <section>
+                    By separating rules into the five categories, naming convention is beneficial for immediately
+                    understanding which category a particular style belongs to and its role within the overall scope of
+                    the page.
+                </section>
+            </aside>
+        </slide>
+
+        <!-- End of Story -->
+        <slide>
+            <hgroup>
+                <h2>UI Refresh Project, 1 Year Later</h2>
+                <h3>Mobile Improvements</h3>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="css">
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 854px) {
+        body.mainPage.click-thru {
+            padding: 0;
+        }
+    }
+
+    /* iPad (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        body.mainPage.click-thru {
+            padding-top: 50px;
+        }
+    }
+</pre>
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Viewport and CSS Media Queries</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>UI Refresh Project, 1 Year Later</h2>
+                <h3>JavaScript PDF Viewer / Editor</h3>
+            </hgroup>
+            <article class="flexbox vcenter" style="margin-top: 0">
+                <img src="images/pdf-viewer.png" width="900">
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Remove Flash</li>
+
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>UI Refresh Project, 1 Year Later</h2>
+                <h3>My Dashboard</h3>
+            </hgroup>
+            <article>
+                <img src="images/angularjs-large.png" class="right">
+                <ul style="line-height: 1.5em" class="build">
+                    <li>Charts and Widgets, Very Visual</li>
+                    <li>Built With:
+                        <ul>
+                            <li><a href="http://angularjs.org/">AngularJS</a></li>
+                            <li><a href="http://angular-ui.github.io/">AngularUI</a></li>
+                            <li><a href="http://angular-ui.github.io/bootstrap/">AngularUI Bootstrap</a></li>
+                        </ul>
+                    </li>
+                    <li>PDF Viewer: 200 lines HTML, 2300 lines of JavaScript</li>
+                    <li>My Dashboard: 300 lines HTML, 466 lines of JavaScript</li>
+                </ul>
+            </article>
         </slide>
 
         <!-- RESOURCES -->
