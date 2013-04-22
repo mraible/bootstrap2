@@ -336,6 +336,9 @@ SlideDeck.prototype.loadConfig_ = function(config) {
       var gplus = p.gplus ? '<span>g+</span><a href="' + p.gplus +
           '">' + p.gplus.replace(/https?:\/\//, '') + '</a>' : '';
 
+      var linkedin = p.linkedin ? '<span>linkedin</span><a href="' + p.linkedin +
+          '">' + p.linkedin.replace(/https?:\/\//, '') + '</a>' : '';
+
       var twitter = p.twitter ? '<span>twitter</span>' +
           '<a href="http://twitter.com/' + p.twitter + '">' +
           p.twitter + '</a>' : '';
@@ -346,7 +349,7 @@ SlideDeck.prototype.loadConfig_ = function(config) {
       var github = p.github ? '<span>github</span><a href="' + p.github +
           '">' + p.github.replace(/https?:\/\//, '') + '</a>' : '';
 
-      var html2 = [gplus, twitter, www, github].join('<br>');
+      var html2 = [gplus, twitter, www, github, linkedin].join('<br>');
 
       if (dataConfigContact) {
         dataConfigContact.innerHTML = html2;

@@ -19,11 +19,12 @@ var SLIDE_CONFIG = {
   // Author information
   presenters: [{
     name: 'Matt Raible',
-    company: '<a href="http://raibledesigns.com">Raible Designs</a>',
+    company: '<a href="http://raibledesigns.com">http://raibledesigns.com</a>',
     //gplus: 'https://plus.google.com/110825273667988321966',
     twitter: '@mraible',
     www: 'http://raibledesigns.com',
-    github: 'http://github.com/mraible'
+    github: 'http://github.com/mraible',
+    linkedin: 'http://linkedin.com/in/mraible'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',
