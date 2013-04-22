@@ -40,7 +40,7 @@
         </slide>
 
         <!-- Short, Publishable Intro -->
-        <slide>
+        <!--<slide>
             <hgroup>
                 <h2>About Me</h2>
             </hgroup>
@@ -75,10 +75,10 @@
                     </div>
                 </div>
             </article>
-        </slide>
+        </slide>-->
 
         <!-- Long, Fast Intro -->
-        <!--<slide class="fill nobackground lake-mcdonald">
+        <slide class="fill nobackground lake-mcdonald">
             <article class="text-large">Matt<br/>Raible</article>
         </slide>
 
@@ -124,12 +124,8 @@
             <article class="flexbox vcenter">
                 <img src="images/thebus-640.jpg" class="picture picture-frame">
             </article>
-        </slide>-->
+        </slide>
 
-        <!--
-            I'm here today to tell you about my experience refreshing a UI. Have any of you worked with an outdated design?
-
-        -->
         <slide class="title-slide segue nobackground">
             <aside class="gdbar">
                 <img src="images/html5-logo-128.png">
@@ -157,6 +153,9 @@
                 <h2>My Experience</h2>
             </hgroup>
             <article>
+
+                <img src="images/taleo-logo.png" style="margin: 0 0 30px 20px">
+
                 <ul>
                     <li>December 2011</li>
                     <li>Page Speed Project</li>
@@ -257,7 +256,10 @@
             </div>
             <aside class="note">
                 <section>
-                    5 to 2.5 seconds
+                    <ul>
+                        <li>5 to 2.5 seconds</li>
+                        <li>Recommend ImageOptim for Images</li>
+                    </ul>
                 </section>
             </aside>
         </slide>
@@ -452,12 +454,13 @@ a:hover { color: @linkHover }
             </article>
         </slide>
 
-        <!-- Legacy Browsers -->
+        <!-- Browsers Issues -->
         <slide>
             <hgroup>
-                <h2>Legacy Browsers</h2>
+                <h2>Browser Issues</h2>
             </hgroup>
             <article>
+                <img src="images/tax-ie7.jpg" class="right">
                 <ul style="line-height: 2em" class="build">
                     <li>No rounded corners or gradients in legacy browsers</li>
                     <li>Used <a href="https://github.com/bfintal/jQuery.IE9Gradius.js">jQuery.IE9Gradius.js</a> for IE9</li>
@@ -465,7 +468,7 @@ a:hover { color: @linkHover }
                     <li>Many, many IE7 Issues: created ie7.css file
                         <ul>
                             <li>Used <code>{ zoom: 1; position: relative }</code> for negative top margins</li>
-                            <li>Used <code>table-layout: fixed</code> so td widths would work in IE7</li>
+                            <li>Used <code>table-layout: fixed</code> so td widths would work</li>
                             <li>Used <code>position: fixed</code> to fix nav width</li>
                             <!--<li><a href="http://theie8countdown.com/">http://theie8countdown.com</a></li>-->
                         </ul>
@@ -496,6 +499,11 @@ a:hover { color: @linkHover }
                    We face a lot of challenges
                 </h2>
             </hgroup>
+            <aside class="note">
+                <section>
+                    In Web Development today, we face a lot of challenges.
+                </section>
+            </aside>
         </slide>
 
         <!-- WEB BROWSERS -->
@@ -508,11 +516,11 @@ a:hover { color: @linkHover }
             </article>
             <aside class="note">
                 <section>
-                <ul>
-                    <li>Browser Vendors & Versions</li>
-                    <li>Screen Resolutions</li>
-                    <li>Operating Systems</li>
-                </ul>
+                    <ul>
+                        <li>Browser Vendors & Versions</li>
+                        <li>Screen Resolutions</li>
+                        <li>Operating Systems</li>
+                    </ul>
                 </section>
             </aside>
         </slide>
@@ -520,7 +528,7 @@ a:hover { color: @linkHover }
         <!-- NO IE6 -->
         <slide>
             <article class="flexbox vcenter">
-                <img src="images/noie6.png"><br/>
+                <a href="http://ie6countdown.com"><img src="images/noie6.png"></a><br/>
             </article>
             <aside class="note">
                 <section>
@@ -532,17 +540,45 @@ a:hover { color: @linkHover }
         </slide>
 
         <slide>
+            <article class="flexbox vcenter">
+                <a href="http://theie7countdown.com"><img src="images/ie7-countdown.png"></a><br/>
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Bootstrap does not support IE6, Bootstrap 3 does not support IE7</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <slide>
+            <article class="flexbox vcenter">
+                <a href="http://theie8countdown.com"><img src="images/ie8-countdown.png"></a><br/>
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>jQuery 2.0 does not support IE8</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <slide>
             <hgroup>
                 <h2>Today's Web Developer</h2>
             </hgroup>
             <article>
-                <ul class="build">
+                <ul>
                     <li>
                        HTML5
                        <ul>
                            <li>Canvas / Semantics/ Storage / File Access / Audio / Video</li>
                        </ul>
                     </li>
+                </ul>
+                <ul class="build">
                     <li>
                         CSS / 3
                         <ul>
@@ -805,7 +841,10 @@ a:hover { color: @linkHover }
                 <h2>Getting Started</h2>
             </hgroup>
             <article>
-              <div class="columns-2">
+                <div class="pictures right" style="margin: -50px 50px 0 0">
+                    <img src="images/html5-logo-256.png"><br/>
+                    <img src="images/templates.png">
+                </div>
                 <ul>
                     <li>
                         Downloading Bootstrap
@@ -828,14 +867,10 @@ a:hover { color: @linkHover }
                             <li>Basic marketing site</li>
                             <li>Fluid layout</li>
                             <li>Starter template</li>
+                            <li><a href="demos/bootstrap-src/docs/getting-started.html#examples">More templates...</a></li>
                         </ul>
                     </li>
                 </ul>
-                <div class="pictures">
-                    <img src="images/html5-logo-256.png"><br/>
-                    <img src="images/templates.png">
-                </div>
-              </div>
             </article>
         </slide>
 
@@ -1004,7 +1039,7 @@ a:hover { color: @linkHover }
                     Demo Time
                 </h1>
                 <h2>
-                   <a href="http://localhost:8000/demos/responsive/">http://localhost:8000/demos/responsive/</a>
+                   <a href="demos/responsive/">http://localhost:8000/demos/responsive/</a>
                 </h2>
             </hgroup>
         </slide>
@@ -1263,10 +1298,10 @@ auctor fringilla.&lt;/p&gt;
 <pre class="prettyprint" data-lang="html">
 &lt;form class=&quot;<b>form-horizontal</b>&quot;&gt;
     &lt;div class=&quot;control-group&quot;&gt;
-    &lt;label class=&quot;control-label&quot; for=&quot;inputEmail&quot;&gt;Email&lt;/label&gt;
-    &lt;div class=&quot;controls&quot;&gt;
-      &lt;input type=&quot;text&quot; id=&quot;inputEmail&quot; placeholder=&quot;Email&quot;&gt;
-    &lt;/div&gt;
+        &lt;label class=&quot;control-label&quot; for=&quot;inputEmail&quot;&gt;Email&lt;/label&gt;
+        &lt;div class=&quot;controls&quot;&gt;
+          &lt;input type=&quot;text&quot; id=&quot;inputEmail&quot; placeholder=&quot;Email&quot;&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
     ...
 &lt;/form&gt;
@@ -1629,7 +1664,7 @@ auctor fringilla.&lt;/p&gt;
                 <img src="http://www.mcginityphoto.com/Nature/Nature/i-fkz9Xh2/3/L/chiclana%20walk-L.jpg" class="picture"
                         style="position: absolute; right: 50px; top: 90px" height="550">
                 <ul>
-                    <li>All plugins require the latest version of jQuery</li>                        
+                    <li>All plugins require the latest version of jQuery</li>
                     <li>
                         What Plugins do you need?
                         <ul>
@@ -1860,7 +1895,7 @@ Click to toggle popover
                 <h2>Look & Feel</h2>
             </hgroup>
             <article>
-                <ul>
+                <ul style="line-height: 1.2em">
                     <li>
                         Bootstrap Expo
                         <ul>
@@ -1910,7 +1945,8 @@ Click to toggle popover
                     <li>Overhaul CSS transitions and reinforce with JavaScript transitions as necessary</li>
                     <li>Dropping IE7 and FF3.6 support</li>
                     <li>Combining standard and responsive CSS into a single file</li>
-                    <li><a href="https://github.com/twitter/bootstrap/pull/6342">https://github.com/twitter/bootstrap/pull/6342</a></li>
+                    <li><a href="http://rc.getbootstrap.com">rc.getbootstrap.com</a> &rarr;
+                        <a href="https://github.com/twitter/bootstrap/pull/6342">github.com/twitter/bootstrap/pull/6342</a></li>
                 </ul>
             </article>
         </slide>
