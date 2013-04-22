@@ -1555,7 +1555,7 @@ img.picture.right {
     text-align: center;
     color: green;
     font-style: italic;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 @media print {
@@ -1637,5 +1637,54 @@ img.picture.right {
   /* line 1080, ../scss/default.scss */
   pre, code {
     font-family: monospace !important;
+  }
+
+  /* Custom styles for printing by @mraible */
+  .first .photos {
+    margin-top: 80px;
+  }
+
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .note {
+    display: none !important;
+  }
+
+  .preview {
+    height: 375px;
+  }
+
+  aside.gdbar {
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  slides > slide .gdbar {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 100;
+  }
+
+  .columns-2 ul:last-child {
+    position: absolute;
+    right: 100px;
+    top: 170px;
+  }
+
+  .picture {
+    box-shadow: 5px 5px 3px silver !important;
+  }
+
+  .last {
+    background: black;
+  }
+
+  .last .preview {
+    height: 600px !important;
   }
 }
