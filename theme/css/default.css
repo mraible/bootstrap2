@@ -299,7 +299,7 @@ slides > slide.blue {
 /* line 171, ../scss/default.scss */
 slides > slide:not(.nobackground):before {
   font-size: 12pt;
-  content: "#HTML5Denver";
+  content: "#dv13-javaweb$";
   position: absolute;
   bottom: 20px;
   left: 60px;
@@ -1436,7 +1436,11 @@ aside.gdbar img {
 }
 
 .hawaii-rainbow {
-    background-image: url(http://www.mcginityphoto.com/Nature/Nature/i-4FxxXw3/0/XL/Rainbow%20over%20Lahaina%20Maui-XL.jpg);
+    background-image: url(http://farm8.staticflickr.com/7366/9218250602_f44ef9293a_b.jpg);
+}
+
+.ireland-doublerainbow {
+    background-image: url(http://farm6.staticflickr.com/5493/9827403195_1e211f6f23_b.jpg);
 }
 
 .holland-lake {

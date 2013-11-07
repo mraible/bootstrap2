@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Refreshing Your UI with HTML5, Bootstrap and CSS3',
-    subtitle: '<a href="http://www.meetup.com/HTML5-Denver-Users-Group/events/93212272/">HTML5 Denver April 22, 2013</a>',
+    title: 'Bootstrap 3 Deep Dive',
+    subtitle: 'The Modern Java Web Developer Bootcamp',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.

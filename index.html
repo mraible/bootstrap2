@@ -35,12 +35,11 @@
                 <p data-config-presenter class="presenter">
                     <!-- populated from slide_config.json -->
                 </p>
-                <p class="photos">Photos by <a href="http://mcginityphoto.com">Trish McGinity</a></p>
             </hgroup>
         </slide>
 
         <!-- Short, Publishable Intro -->
-        <slide>
+        <!--<slide>
             <hgroup>
                 <h2>About Me</h2>
             </hgroup>
@@ -73,7 +72,7 @@
                     </li>
                 </ul>
             </article>
-        </slide>
+        </slide>-->
 
         <!-- Long, Fast Intro -->
         <!--<slide class="fill nobackground lake-mcdonald">
@@ -124,387 +123,32 @@
             </article>
         </slide>-->
 
-        <slide class="title-slide segue nobackground">
-            <aside class="gdbar">
-                <img src="images/html5-logo-128.png">
-            </aside>
-            <img src="http://farm8.staticflickr.com/7159/6777477811_04b9563537_o.png" width="600" class="right" style="margin-right: -20px">
-            <hgroup class="auto-fadein">
-                <h1>
-                    Legacy Design
-                </h1>
-                <h2>
-                    Have you worked with an outdated design?
-                </h2>
-            </hgroup>
-            <aside class="note">
-                <section>
-                    I'm here today to tell you about my experience refreshing a UI.
-                </section>
-            </aside>
-        </slide>
-
+        <!-- Bootstrap 3 -->
         <slide>
-            <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=1878390963">
-                <img src="http://www.mcginityphoto.com/Nature/Nature/i-bfxThgg/0/M/Wash%20Park%20Sunset%20May%2029%202012-M.jpg" class="picture right"
-                    style="margin-right: 10px; margin-top: 80px" alt="Sunset at Wash Park in Denver"></a>
             <hgroup>
-                <h2>My Experience</h2>
+                <h2>Bootstrap 3</h2>
             </hgroup>
             <article>
-
-                <img src="images/taleo-logo.png" style="margin: 0 0 30px 20px">
-
-                <ul style="max-width: 300px">
-                    <li>December 2011</li>
-                    <li>Page Speed Project</li>
-                    <li>UI Refresh Project</li>
-                    <li>Bootstrap</li>
-                    <li>Legacy Browsers</li>
-                </ul>
-            </article>
-        </slide>
-
-        <!-- Page Speed -->
-        <slide>
-            <hgroup>
-                <h2>Best Practices for Speeding Up Your Web Site</h2>
-            </hgroup>
-            <article class="smaller">
-                <div class="columns-2">
-                    <ul>
-                        <li>Minimize HTTP Requests</li>
-                        <li>Use a Content Delivery Network</li>
-                        <li>Add an Expires or a Cache-Control Header</li>
-                        <li>Gzip Components</li>
-                        <li>Put Stylesheets at the Top</li>
-                        <li>Put Scripts at the Bottom</li>
-                        <li>Avoid CSS Expressions</li>
-                        <li>Make JavaScript and CSS External</li>
-                        <li>Reduce DNS Lookups</li>
-                        <li>Minify JavaScript and CSS</li>
-                        <li>No 404s</li>
-                    </ul>
-                    <ul>
-                        <li>Avoid Redirects</li>
-                        <li>Remove Duplicate Scripts</li>
-                        <li>Configure ETags</li>
-                        <li>Make Ajax Cacheable</li>
-                        <li>Flush the Buffer Early</li>
-                        <li>Use GET for AJAX Requests</li>
-                        <li>Post-load Components</li>
-                        <li>Split Components Across Domains</li>
-                        <li>Optimize Images</li>
-                        <li>Choose &lt;link> over @import</li>
-                        <li>Minimize the Number of iframes</li>
-                    </ul>
-
-                </div>
-                <div class="link">
-                    35 Total Rules &rarr;
-                    <a href="http://developer.yahoo.com/performance/rules.html">
-                        http://developer.yahoo.com/performance/rules.html
-                    </a>
-                </div>
-            </article>
-            <aside class="note">
-                <section>22 Rules shown here</section>
-            </aside>
-        </slide>
-
-        <slide>
-            <hgroup>
-                <h2>Page Speed Project</h2>
-            </hgroup>
-            <article class="smaller">
-                <div class="pictures right" style="margin-right: 20px">
-                    <img src="images/google-page-speed.jpg">
-                    <img src="images/yslow-ss.png" width="500" style="margin-top: 25px">
-                </div>
+                <img src="https://f.cloud.github.com/assets/98681/319244/6f1846e4-98b7-11e2-98a7-c9804916d418.png"
+                     width="500" class="right" style="margin-top: -20px">
                 <ul>
-                    <li>YSlow
-                        <ul>
-                            <li>Staging got a B</li>
-                            <li>Production got an F</li>
-                            <li><span style="font-style: italic">Different Configurations!</span></li>
-                        </ul>
-                    </li>
-                    <li>Server Recommendations
-                        <ul>
-                            <li>Enable Compression</li>
-                            <li>Add Expires Headers</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Suggested Code Changes
-                        <ul>
-                            <li>Optimizing Images (25% savings)</li>
-                            <li>Reduce HTTP Requests
-                                <ul>Combining JavaScript Files</ul>
-                                <ul>CSS Image Sprites</ul>
-                            </li>
-                            <li>JavaScript at Bottom</li>
-                        </ul>
-                    </li>
+                    <li>Bootstrap 3 is mobile-first</li>
+                </ul>
+                <ul class="build" style="line-height: 1.5em">
+                    <li>Overhauled CSS transitions and reinforced with JavaScript transitions as necessary</li>
+                    <li>Dropped IE7 and FF3.6 support</li>
+                    <li>Combined standard and responsive CSS into a single file</li>
+                    <li><a href="https://github.com/twitter/bootstrap/pull/6342">github.com/twitter/bootstrap/pull/6342</a></li>
                 </ul>
             </article>
-            <div class="results">
-                <b>Result:</b> Improved page load by 50%!
-            </div>
-            <aside class="note">
-                <section>
-                    <ul>
-                        <li>5 to 2.5 seconds</li>
-                        <li>Recommend ImageOptim for Images</li>
-                    </ul>
-                </section>
-            </aside>
         </slide>
 
-        <slide>
-            <hgroup>
-                <h2>Tilt 3D</h2>
-            </hgroup>
-            <article class="flexbox vcenter">
-                <img src="https://addons.cdn.mozilla.net/img/uploads/previews/full/62/62221.png?modified=1316938724"
-                     alt="Title 3D" class="picture">
-                <div class="picture-credit">
-                    <a href="https://addons.mozilla.org/en-us/firefox/addon/tilt/">https://addons.mozilla.org/en-us/firefox/addon/tilt/</a>
-                </div>
-            </article>
-        </slide>
-
-        <!-- UI Refresh Project + Bootstrap -->
-        <slide class="nobackground">
-            <hgroup>
-                <h2>UI Refresh Project</h2>
-            </hgroup>
-            <article class="flexbox vcenter" style="margin-top: 6px">
-                <img src="images/taleo-ui-myview-before.jpg">
-            </article>
-            <aside class="note">
-                <section>
-                    Next, I started working on a new project - refreshing the UI. <b>Nick, the Lead UX Designer</b> at Taleo
-                    (at the time), <b>had developed a number of mockups</b> and presented it to the developers and product
-                    folks in early November. I listened to a WebEx of that meeting and learned that everyone <b>thought
-                    it'd take 6-9 months to complete</b> the work. They figured they could release the new design in Q3
-                    2012.
-                </section>
-            </aside>
-        </slide>
-
-        <!-- Spike -->
-        <slide class="nobackground">
-            <hgroup>
-                <h2>UI Refresh Spike</h2>
-            </hgroup>
-            <article class="flexbox vcenter" style="margin-top: 6px">
-                <img src="images/taleo-ui-myview-after.jpg">
-            </article>
-            <aside class="note">
-                <section>
-                    I offered to help with the redesign and do a
-                    spike to help estimate. They agreed it'd be a good use of my time and I started working on it the
-                    week before Christmas. Since <b>I'd used Twitter Bootstrap for my Play More!</b> app, I recommended we use
-                    it as a foundation of the redesign. They agreed and I went to work. By the end of the week, I'd made
-                    good progress and told them I thought the <b>redesign was possible in 2-3 months</b> (including QA and
-                    cross-browser compatibility).
-
-                </section>
-            </aside>
-        </slide>
-
-        <!-- CSS Sprites -->
-        <slide class="nobackground">
-            <hgroup>
-                <h2>CSS Image Sprites</h2>
-            </hgroup>
-            <article class="flexbox vcenter" style="margin-top: 16px">
-                <a href="http://spritecow.com" style="border: 0">
-                    <img src="http://farm9.staticflickr.com/8403/8669308528_1ed2c1e44d_z.jpg" alt="Sprite Cow"></a>
-
-                <div class="link" style="margin-top: 10px">
-                    <a href="http://css-tricks.com/css-sprites/">http://css-tricks.com/css-sprites/</a>
-                </div>
-            </article>
-            <aside class="note">
-                <section>
-                    When I came back to work in January, we decided to <b>split the redesign into two phases</b>. Rather than moving
-                    elements around and introducing new features, we decided to do that in the 2nd phase. The 1st phase would entail
-                    simply <b>re-skinning the existing UI, with minimal HTML changes</b>. I spent a week refining my spike and integrating
-                    it into a branch. <b>The next week, I switched images from individual images to CSS sprites</b>.
-                </section>
-            </aside>
-        </slide>
-
-        <!-- Theme System -->
-        <slide>
-            <hgroup>
-                <h2>Themes with LESS</h2>
-            </hgroup>
-            <article>
-<pre class="prettyprint" data-lang="css">
-@link: #0087CC;
-@linkHover: #0087CC;
-
-@border: #608FAF;
-
-@navbarBackground: #D6E7F2;
-@navbarHover: #333333;
-@dropdownBackground: #EFF5F9;
-@dropdownHover: #D6E7F2;
-
-@sidebarBackground: #EFF5F9;
-@headerDarkBackground: #C3EEB7;
-@headerMediumBackground: #D6F3CD;
-@headerLightBackground: #ffffff;
-
-@iconLargeYPosition: -263px;
-@iconYPosition: -718px;
-</pre>
-            </article>
-            <aside class="note">
-                <section>
-                    Next, I implemented a new theming system with different colors/icons and got everything looking good in Chrome, Safari and IE8/9.
-                </section>
-            </aside>
-        </slide>
-
-        <slide>
-            <hgroup>
-                <h2>Themes with LESS: theme.less</h2>
-            </hgroup>
-            <article>
-<pre class="prettyprint" data-lang="css">
-@import '@colors';
-
-a { color: @link }
-
-a:hover { color: @linkHover }
-
-.navbar div > ul > li {
-    border: 1px solid @border;
-    background-color: @navbarBackground;
-    border-top: 0;
-}
-
-.navbar-inner {
-    border-top: 1px solid @border;
-}
-
-</pre>
-
-            </article>
-        </slide>
-
-        <slide>
-            <hgroup>
-                <h2>Themes with LESS: Ant</h2>
-            </hgroup>
-            <article>
-<pre class="prettyprint" data-lang="xml">
-&lt;macrodef name="create-css"&gt;
-    &lt;attribute name="theme"/&gt;
-    &lt;sequential&gt;
-        &lt;echo message="Compiling LESS files :: Creating '@{theme}' Theme"/&gt;
-        &lt;copy description="Setup themes for processing" todir="${build}/themes"&gt;
-            &lt;fileset dir="${basedir}/web/css/UIv9/themes" includes="@{theme}-colors.less"/&gt;
-        &lt;/copy&gt;
-        &lt;concat destfile="${build}/themes/@{theme}.less" eol="dos" force="no"&gt;
-            &lt;fileset dir="${basedir}/web/css/UIv9/themes"&gt;
-                &lt;include name="@{theme}-colors.less"/&gt;
-                &lt;include name="theme.less"/&gt;
-            &lt;/fileset&gt;
-        &lt;/concat&gt;
-        &lt;replace file="${build}/themes/@{theme}.less" token="@import '@colors';" value=""/&gt;
-        <b>&lt;wro4j processor="lessCss" dir="${build}/themes" todir="${basedir}/web/css/UIv9"
-               target-groups="@{theme}"/&gt;</b>
-        &lt;delete dir="${basedir}/web/css/UIv9" includes="**-colors.css"/&gt;
-    &lt;/sequential&gt;
-&lt;/macrodef&gt;
-</pre>
-            </article>
-        </slide>
-
-        <slide>
-            <hgroup>
-                <h2>Themes with LESS: Ant</h2>
-            </hgroup>
-            <article>
-<pre class="prettyprint" data-lang="xml">
-    &lt;macrodef name="wro4j"&gt;
-        &lt;attribute name="processor"/&gt;
-        &lt;attribute name="wro-file" default="wro.xml"/&gt;
-        &lt;attribute name="target-groups"/&gt;
-        &lt;attribute name="dir"/&gt;
-        &lt;attribute name="todir"/&gt;
-        &lt;sequential&gt;
-            &lt;exec executable="java" failonerror="true"&gt;
-                &lt;arg value="-jar"/&gt;
-                &lt;arg value="../common/lib-ext/wro4j-runner-1.4.4-jar-with-dependencies.jar"/&gt;
-                &lt;arg value="--wroFile"/&gt;
-                &lt;arg value="@{wro-file}"/&gt;
-                &lt;arg value="--contextFolder"/&gt;
-                &lt;arg value="@{dir}"/&gt;
-                &lt;arg value="--targetGroups"/&gt;
-                &lt;arg value="@{target-groups}"/&gt;
-                &lt;arg value="--destinationFolder"/&gt;
-                &lt;arg value="@{todir}"/&gt;
-                &lt;arg value="-c"/&gt;
-                &lt;arg value="@{processor}"/&gt;
-            &lt;/exec&gt;
-        &lt;/sequential&gt;
-    &lt;/macrodef&gt;
-</pre>
-            </article>
-        </slide>
-
-        <slide>
-            <hgroup>
-                <h2>Themes with LESS: Customizer</h2>
-            </hgroup>
-            <article class="flexbox vcenter">
-                <img src="images/theme-picker.png" style="margin-left: -60px; margin-top: -20px">
-            </article>
-        </slide>
-
-        <!-- Browsers Issues -->
-        <slide>
-            <hgroup>
-                <h2>Browser Issues</h2>
-            </hgroup>
-            <article>
-                <img src="images/tax-ie7.jpg" class="right">
-                <ul style="line-height: 2em" class="build">
-                    <li>No rounded corners or gradients in legacy browsers</li>
-                    <li>Used <a href="https://github.com/bfintal/jQuery.IE9Gradius.js">jQuery.IE9Gradius.js</a> for IE9</li>
-                    <li>Had to add class="checkbox" to all checkbox labels</li>
-                    <li>Many, many IE7 Issues: created ie7.css file
-                        <ul>
-                            <li>Used <code>{ zoom: 1; position: relative }</code> for negative top margins</li>
-                            <li>Used <code>table-layout: fixed</code> so td widths would work</li>
-                            <li>Used <code>position: fixed</code> to fix nav width</li>
-                        </ul>
-                    </li>
-                </ul>
-            </article>
-            <aside class="note">
-                <section>Pairing with Designer and Product Manager was <b>very</b> helpful.</section>
-            </aside>
-        </slide>
-
-        <!--
-            Web development Today
-
-            Remember back when there was only 1 web browser
-            If you could spell html you could get a job
-        -->
         <slide class="title-slide segue nobackground">
             <aside class="gdbar">
                 <img src="images/bootstrap_128.png">
             </aside>
-            <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=2439893124&k=g43rLLh">
-                <img src="http://www.mcginityphoto.com/Nature/Nature/i-g43rLLh/0/M/Icelandic%20Road%20from%20Bus-M.jpg"
+            <a href="http://www.flickr.com/photos/mcginityphoto/10076685894/">
+                <img src="http://farm4.staticflickr.com/3788/10076685894_1521bb7833.jpg"
                      class="right picture" alt="Icelandic Road from Bus"></a>
             <hgroup class="auto-fadein">
                 <h1>
@@ -516,7 +160,8 @@ a:hover { color: @linkHover }
             </hgroup>
             <aside class="note">
                 <section>
-                    In Web Development today, we face a lot of challenges.
+                    Remember back when there was only 1 web browser?<br>
+                    If you could spell HTML you could get a job.
                 </section>
             </aside>
         </slide>
@@ -686,9 +331,9 @@ a:hover { color: @linkHover }
             <aside class="gdbar">
                 <img src="images/bootstrap_128.png">
             </aside>
-            <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=1723945240&k=cBpVPf6" style="border: 0" title="Almudena Cathedral Madrid">
-                <img src="http://www.mcginityphoto.com/Nature/Nature/i-cBpVPf6/1/M/AlmudenaCathedralMadrid2-M.jpg"
-                    class="right picture" alt="Almudena Cathedral Madrid"></a>
+            <a href="http://www.flickr.com/photos/mcginityphoto/10177015714/in/set-72157636368750763/" style="border: 0" title="Fiji Land Ho!">
+                <img src="http://farm6.staticflickr.com/5478/10177015714_f099470433_z.jpg"
+                    class="right picture" alt="Fiji Land Ho!" width="550"></a>
             <hgroup class="auto-fadein">
                 <h1>
                     Bootstrap
@@ -700,13 +345,6 @@ a:hover { color: @linkHover }
         </slide>
 
         <!-- talk about what bootstrap is here -->
-        <slide class="title-slide segue nobackground">
-            <article>
-                <img src="images/bootstrap_homepage.png">
-                <img src="images/introducing_bootstrap.png">
-            </article>
-        </slide>
-
         <slide>
             <hgroup>
                 <h2>What is Bootstrap?</h2>
@@ -727,10 +365,10 @@ a:hover { color: @linkHover }
                     <li>
                         <b class="blue">JavaScript Plugins</b>
                         <ul>
-                            <li>13 plugins</li>
+                            <li>11 plugins</li>
                             <li>Modal Dialog Windows</li>
                             <li>Tabs</li>
-                            <li>Typeahead</li>
+                            <li>ScrollSpy</li>
                             <li>Carousel</li>
                         </ul>
                     </li>
@@ -740,10 +378,9 @@ a:hover { color: @linkHover }
                     <li>
                         <b class="blue">Scaffolding</b>
                         <ul>
-                            <li>Layouts</li>
                             <li>Grid System</li>
-                            <li>Fluid Grid System</li>
                             <li>Responsive Design</li>
+                            <li>Responsive Utilities</li>
                         </ul>
                     </li>
                     <li>
@@ -766,16 +403,16 @@ a:hover { color: @linkHover }
                 <h2>Reasons To Love Bootstrap</h2>
             </hgroup>
             <article>
-                <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=2219143296&k=8fkJ2tk" title="Happy 40th Anniversary Joe and Barb Raible! Kauai, Hawaii">
-                    <img src="http://www.mcginityphoto.com/Nature/Nature/i-8fkJ2tk/0/M/Happy%20Anniversary%21-M.jpg"
-                         alt="Happy 40th Anniversary Joe and Barb Raible! Kauai, Hawaii" class="picture right" style="margin-right: 50px"></a>
+                <a href="http://www.flickr.com/photos/mcginityphoto/9901826684/" title="Grapevines in Piedmont Italy by McGinityPhoto, on Flickr">
+                    <img src="http://farm3.staticflickr.com/2885/9901826684_70c5a3d947.jpg" width="333" height="500"
+                         alt="Grapevines in Piedmont Italy" class="picture right" style="margin-right: 50px"></a>
                 <ul style="max-width: 300px">
                     <li>For all skill levels</li>
                     <li>Documentation</li>
                     <li>Cross Everything</li>
                     <li>Lightweight</li>
                     <li>Responsive Design</li>
-                    <li>13 JavaScript plugins</li>
+                    <li>JavaScript plugins</li>
                     <li>Open Source</li>
                     <li>Built on LESS</li>
                 </ul>
@@ -803,21 +440,21 @@ a:hover { color: @linkHover }
                     <li>
                         Releases
                         <ul>
-                            <li>v 1.0 - 08/19/2011</li>
-                            <li>v 2.0 - 01/31/2012</li>
-                            <li>v 2.1.1 - 09/04/2012</li>
-                            <li>v 2.3.1 - 03/01/2013</li>
+                            <li>v 1.0 - 19 Aug 2011</li>
+                            <li>v 2.0 - 31 Jan 2012</li>
+                            <li>v 3.0 - 19 Aug 2013</li>
+                            <li>v 3.0.1 - 29 Oct 2013</li>
                         </ul>
                     </li>
                     <li>
                         Popularity
                         <ul>
-                            <li>@twbootstrap 58.5K Followers</li>
+                            <li><a href="http://twitter.com/twbootstrap">@twbootstrap</a> 102K Followers</li>
                             <li>
                                 GitHub Stats
                                 <ul>
-                                    <li>48K Watchers</li>
-                                    <li>14K Forks</li>
+                                    <li>60K Watchers</li>
+                                    <li>21K Forks</li>
                                 </ul>
                             </li>
                         </ul>
@@ -830,8 +467,9 @@ a:hover { color: @linkHover }
             <aside class="gdbar">
                 <img src="images/bootstrap_128.png">
             </aside>
-            <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=1827344164&k=DtsWbjD" style="border: 0" title="Way out in Arches, Utah">
-                <img src="http://www.mcginityphoto.com/Nature/Nature/i-DtsWbjD/0/L/DSC_9984-L.jpg" class="right picture" alt="Way out in Arches, Utah"></a>
+            <a href="http://www.flickr.com/photos/mcginityphoto/9901906685/" title="Portofino Door and flowers by McGinityPhoto, on Flickr">
+                <img src="http://farm4.staticflickr.com/3739/9901906685_46b0bb39e6.jpg" width="500" height="332" alt="Portofino Door and flowers"
+                     class="right picture"></a>
             <hgroup class="auto-fadein">
                 <h1>
                     Getting Started
@@ -870,10 +508,10 @@ a:hover { color: @linkHover }
                     <li>
                         Starter Templates
                         <ul>
-                            <li>Basic marketing site</li>
-                            <li>Fluid layout</li>
-                            <li>Starter template</li>
-                            <li><a href="demos/bootstrap-src/docs/getting-started.html#examples">More templates...</a></li>
+                            <li>Basic template</li>
+                            <li>Carousel</li>
+                            <li>Jumbotron</li>
+                            <li><a href="http://getbootstrap.com/getting-started/#examples">More templates...</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -884,9 +522,9 @@ a:hover { color: @linkHover }
             <aside class="gdbar">
                 <img src="images/bootstrap_128.png">
             </aside>
-            <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=2438977987&k=vT885Nt" style="border: 0" title="Dinner for the Eiffel Birds">
-                <img src="http://www.mcginityphoto.com/Nature/Nature/i-vT885Nt/0/M/Dinner%20for%20the%20Eiffel%20Birds-M.jpg"
-                     class="picture right" width="500" alt="Dinner for the Eiffel Birds"></a>
+            <a href="http://www.flickr.com/photos/mcginityphoto/10177765963/" title="Qamea Restaurant at night by McGinityPhoto, on Flickr">
+                <img src="http://farm4.staticflickr.com/3677/10177765963_53743ca6ce.jpg" width="500" class="picture right"
+                     alt="Qamea Restaurant at night"></a>
             <hgroup class="auto-fadein">
                 <h1>
                     Scaffolding
@@ -895,11 +533,43 @@ a:hover { color: @linkHover }
                    Bootstrap is built on responsive 12-column grids, layouts, and components.
                 </h2>
             </hgroup>
+            <aside class="note">
+                <section>
+                    <p>Rows must be placed within a .container for proper alignment and padding.</p>
+
+                    <p><b>Grids and full-width layouts</b><br/>
+                    Folks looking to create fully fluid layouts (meaning your site stretches the entire width of the viewport)
+                    must wrap their grid content in a containing element with padding: 0 15px; to offset the margin: 0 -15px; used on .rows.
+                    </p>
+                </section>
+            </aside>
         </slide>
 
         <slide>
             <hgroup>
-                <h2>Layouts: Fixed Layout</h2>
+                <h2>Migrating from 2.x to 3.0</h2>
+            </hgroup>
+            <article>
+
+                <img src="images/migration-changed.png">
+
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Removed in 3.0</h2>
+            </hgroup>
+            <article>
+
+                <img src="images/migration-removed.png" style="margin-top: -20px">
+
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Layouts: Grid system</h2>
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
@@ -916,32 +586,6 @@ a:hover { color: @linkHover }
                     <ul>
                         <li>940px</li>
                         <li>12-column grid</li>
-                    </ul>
-                </section>
-            </aside>
-        </slide>
-
-        <slide>
-            <hgroup>
-                <h2>Layouts: Fluid Layout</h2>
-            </hgroup>
-            <article class="smaller">
-<pre class="prettyprint" data-lang="html">
-<b>&lt;div class=&quot;container-fluid&quot;&gt;</b>
-  &lt;div class=&quot;row-fluid&quot;&gt;
-    &lt;div class=&quot;span2&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;span10&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-                <img src="images/fluid_layout.png" alt="">
-            </article>
-            <aside class="note">
-                <section>
-                    <ul>
-                        <li>Fluid != Responsive</li>
                     </ul>
                 </section>
             </aside>
@@ -964,35 +608,11 @@ a:hover { color: @linkHover }
                 </ul>
 <pre class="prettyprint" data-lang="html">
 &lt;div class=&quot;<b>row</b>&quot;&gt;
-    &lt;div class=&quot;<b>span4</b>&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;<b>span4</b>&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;<b>span4</b>&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;<b>col-md-4</b>&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;<b>col-md-4</b>&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;<b>col-md-4</b>&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>                
-            </article>
-        </slide>
-
-        <slide>
-            <hgroup>
-                <h2>Fluid Grid System</h2>
-            </hgroup>
-            <article>
-<pre class="prettyprint" data-lang="html">
-&lt;div class=&quot;<b>row-fluid</b>&quot;&gt;
-    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;<b>row-fluid</b>&quot;&gt;
-    &lt;div class=&quot;span6&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;span6&quot;&gt;...&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;<b>row-fluid</b>&quot;&gt;
-    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
-&lt;/div&gt;
-</pre>
             </article>
         </slide>
 
@@ -1024,11 +644,10 @@ a:hover { color: @linkHover }
     <b>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</b>
     &lt;title&gt;Bootstrap: Getting Started&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
-    <b>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/bootstrap-responsive.css&quot; &gt;</b>
 &lt;/head&gt;
 &lt;body&gt;
 
-&lt;h1&gt;Responsive Bootstrap&lt;/h1&gt;
+&lt;h1&gt;Mobile first Bootstrap&lt;/h1&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
@@ -1036,21 +655,52 @@ a:hover { color: @linkHover }
             </article>
         </slide>
 
+        <slide>
+            <hgroup>
+                <h2>Responsive Design</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    <b>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0,
+          maximum-scale=1.0, user-scalable=no"&gt;</b>
+    &lt;title&gt;Bootstrap: Getting Started&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Responsive Images&lt;/h1&gt;
+
+    &lt;img src="..." class="img-responsive" alt="Responsive image"&gt;
+    &lt;!-- .img-responsive applies max-width: 100%; and height: auto; to the image --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            </article>
+            <aside class="note">
+                <section>
+                    This disables zooming, meaning users are only able to scroll, and results in your site
+                    feeling a bit more like a native application.
+                </section>
+            </aside>
+        </slide>
 
         <slide class="title-slide segue nobackground">
             <aside class="gdbar">
                 <img src="images/bootstrap_128.png">
             </aside>
-            <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=1723946131&k=GKMKS2v"
-               title="Independence Plaza Madrid Puerta de Alcala at night with car lights" style="border: 0">
-                <img src="http://www.mcginityphoto.com/Nature/Nature/i-GKMKS2v/1/M/DSC_6901-M.jpg"
-                     class="picture right" alt="Independence Plaza Madrid Puerta de Alcala at night with car lights"></a>
+            <a href="http://www.flickr.com/photos/mcginityphoto/9902185533/" title="River Dora Baltea near Mont Blanc Italy by McGinityPhoto, on Flickr">
+                <img src="http://farm3.staticflickr.com/2855/9902185533_89f488d561.jpg" width="500" class="picture right"
+                     alt="River Dora Baltea near Mont Blanc Italy"></a>
             <hgroup class="auto-fadein">
                 <h1>
                     Demo Time
                 </h1>
                 <h2>
-                   <a href="demos/responsive/">http://localhost:8000/demos/responsive/</a>
+                   <a href="demos/responsive/">&raquo; demos/responsive</a>
                 </h2>
             </hgroup>
         </slide>
@@ -1059,10 +709,9 @@ a:hover { color: @linkHover }
             <aside class="gdbar">
                 <img src="images/bootstrap_128.png">
             </aside>
-            <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=1618568787&k=WLmNjZW"
-               title="Sunset at Arc de Triumph Paris, France" style="border: 0">
-                <img src="http://www.mcginityphoto.com/Nature/Nature/i-WLmNjZW/0/M/ArcdeTriumphNov2011-M.jpg"
-                     class="picture right" alt="Sunset at Arc de Triumph Paris, France"></a>
+            <a href="http://www.flickr.com/photos/mcginityphoto/9902115964/" title="Savoy Castle by McGinityPhoto, on Flickr">
+                <img src="http://farm4.staticflickr.com/3698/9902115964_fae359eb8b_z.jpg" width="640"
+                     class="picture right" alt="Savoy Castle"></a>
             <hgroup class="auto-fadein">
                 <h1>
                     Base CSS
@@ -1084,9 +733,10 @@ a:hover { color: @linkHover }
 &lt;h3&gt;h3. Heading 3&lt;/h3&gt;
 &lt;h4&gt;h4. Heading 4&lt;/h4&gt;
 &lt;h5&gt;h5. Heading 5&lt;/h5&gt;
-&lt;h6&gt;h6. Heading 6&lt;/h6&gt;
 </pre>
-                <img src="images/headings.png">
+                <div class="centered">
+                    <img src="images/headings.png">
+                </div>
             </article>
         </slide>
 
@@ -1096,10 +746,12 @@ a:hover { color: @linkHover }
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
+&lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et
+   magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.&lt;/p&gt;
+
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi
-erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus
-auctor fringilla.&lt;/p&gt;
+   Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat
+   porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
 </pre>
                 <img src="images/bodycopy.png">
             </article>
@@ -1126,11 +778,11 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;p class=&quot;muted&quot;&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
-&lt;p class=&quot;text-warning&quot;&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
-&lt;p class=&quot;text-error&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
-&lt;p class=&quot;text-info&quot;&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
+&lt;p class=&quot;text-muted&quot;&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
 &lt;p class=&quot;text-success&quot;&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
+&lt;p class=&quot;text-info&quot;&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p&gt;
+&lt;p class=&quot;text-warning&quot;&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+&lt;p class=&quot;text-danger&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
 </pre>
                 <img src="images/emphasis.png">
             </article>
@@ -1139,16 +791,15 @@ auctor fringilla.&lt;/p&gt;
 
         <slide>
             <hgroup>
-                <h2>Typography: Lists</h2>
+                <h2>Typography: Alignment classes</h2>
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;ul&gt;
-&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
-...
-&lt;/ul&gt;
+&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;
 </pre>
-                <img src="images/lists.png">
+                <img src="images/alignment.png">
             </article>
         </slide>
 
@@ -1239,13 +890,15 @@ auctor fringilla.&lt;/p&gt;
                 <h2>Forms</h2>
             </hgroup>
             <article class="smaller">
-                <img src="images/forms.jpg" class="right" style="border:2px solid #666;padding:10px; margin-right: 20px">
+                <a href="http://www.flickr.com/photos/mcginityphoto/9827564406/" title="Madeleine Paris at Night by McGinityPhoto, on Flickr">
+                    <img src="http://farm8.staticflickr.com/7428/9827564406_f59cc4ba38.jpg" width="500" class="right picture picture-frame"
+                         alt="Madeleine Paris at Night" style="margin-right: 0"></a>
+
                 <ul>
                     <li>
                         Four Layouts
                         <ul>
                             <li>Vertical (default)</li>
-                            <li>Search</li>
                             <li>Inline</li>
                             <li>Horizontal</li>
                         </ul>
@@ -1262,8 +915,8 @@ auctor fringilla.&lt;/p&gt;
                     <li>
                         Look & Feel
                         <ul>
-                            <li>Relative Sizing (small/med/large/xlarge)</li>
-                            <li>Grid Sizing (span1/span2/span3/etc)</li>
+                            <li>Relative Sizing (sm/md/lg)</li>
+                            <li>Grid Sizing (.col-md-1/.col-md-2/.col-md-3/etc)</li>
                         </ul>
                     </li>
                 </ul>
@@ -1276,16 +929,16 @@ auctor fringilla.&lt;/p&gt;
                 <h2>Forms: Default Styles</h2>
             </hgroup>
             <article class="smaller">
-<pre class="prettyprint" data-lang="html">
+<pre class="prettyprint" data-lang="html" style="margin-top: -20px">
 &lt;form&gt;
     &lt;legend&gt;Legend&lt;/legend&gt;
     &lt;label&gt;Label name&lt;/label&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Type something…&quot;&gt;
+    &lt;input type=&quot;text&quot; class="form-control" placeholder=&quot;Type something…&quot;&gt;
     &lt;span class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/span&gt;
     &lt;label class=&quot;checkbox&quot;&gt;
         &lt;input type=&quot;checkbox&quot;&gt; Check me out
     &lt;/label&gt;
-    &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;Submit&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
 &lt;/form&gt;
 </pre>
                 <img src="images/form_default.png">
@@ -1305,11 +958,11 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article class="smaller">
 <pre class="prettyprint" data-lang="html">
-&lt;form class=&quot;<b>form-horizontal</b>&quot;&gt;
-    &lt;div class=&quot;control-group&quot;&gt;
-        &lt;label class=&quot;control-label&quot; for=&quot;inputEmail&quot;&gt;Email&lt;/label&gt;
-        &lt;div class=&quot;controls&quot;&gt;
-          &lt;input type=&quot;text&quot; id=&quot;inputEmail&quot; placeholder=&quot;Email&quot;&gt;
+&lt;form class="<b>form-horizontal</b>" role="form"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="inputEmail" class="col-sm-2 control-label"&gt;Email&lt;/label&gt;
+        &lt;div class="col-sm-3"&gt;
+            &lt;input type="email" class="form-control" id="inputEmail" placeholder="Email"&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     ...
@@ -1327,21 +980,6 @@ auctor fringilla.&lt;/p&gt;
                     </ul>
                 </section>
             </aside>
-        </slide>          
-
-        <slide>
-            <hgroup>
-                <h2>Search Form</h2>
-            </hgroup>
-            <article>
-<pre class="prettyprint" data-lang="html">
-&lt;form class=&quot;form-search&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;input-medium <b>search-query</b>&quot;&gt;
-    &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;Search&lt;/button&gt;
-&lt;/form&gt;
-</pre>
-                <img src="images/form_search.png">
-            </article>
         </slide>
 
         <slide>
@@ -1350,13 +988,13 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;form class=&quot;<b>form-inline</b>&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;input-small&quot; placeholder=&quot;Email&quot;&gt;
-    &lt;input type=&quot;password&quot; class=&quot;input-small&quot; placeholder=&quot;Password&quot;&gt;
-    &lt;label class=&quot;checkbox&quot;&gt;
-        &lt;input type=&quot;checkbox&quot;&gt; Remember me
-    &lt;/label&gt;
-    &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;Sign in&lt;/button&gt;
+&lt;form class="<b>form-inline</b>" role="form"&gt;
+  &lt;div class="form-group"&gt;&lt;input type="email" class="form-control" placeholder="Enter email"&gt;&lt;/div&gt;
+  &lt;div class="form-group"&gt;&lt;input type="password" class="form-control"placeholder="Password"&gt;&lt;/div&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;&lt;input type="checkbox"&gt; Remember me&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-default"&gt;Sign in&lt;/button&gt;
 &lt;/form&gt;
 </pre>
                 <img src="images/form_inline.png">
@@ -1365,35 +1003,44 @@ auctor fringilla.&lt;/p&gt;
 
         <slide>
             <hgroup>
-                <h2>Form Controls: Relative Sizing</h2>
+                <h2>Form Controls: Sizing</h2>
             </hgroup>
             <article class="smaller">
+                <p>
+                    Set heights using classes like <code>.input-lg</code>, and set widths using grid column
+                    classes like <code>.col-lg-*</code>.
+                </p>
 <pre class="prettyprint" data-lang="html">
-&lt;input class=&quot;<b>input-mini</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-mini&quot;&gt;
-&lt;input class=&quot;<b>input-small</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-small&quot;&gt;
-&lt;input class=&quot;<b>input-medium</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-medium&quot;&gt;
-&lt;input class=&quot;<b>input-large</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-large&quot;&gt;
-&lt;input class=&quot;<b>input-xlarge</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-xlarge&quot;&gt;
-&lt;input class=&quot;<b>input-xxlarge</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-xxlarge&quot;&gt;
+&lt;input class="form-control <b>input-lg</b>" type="text" placeholder=".input-lg"&gt;
+&lt;input class="form-control" type="text" placeholder="Default input"&gt;
+&lt;input class="form-control <b>input-sm</b>" type="text" placeholder=".input-sm"&gt;
+
+&lt;select class="form-control <b>input-lg</b>"&gt;...&lt;/select&gt;
+&lt;select class="form-control"&gt;...&lt;/select&gt;
 </pre>
-                <img src="images/form_controls_relative.png">
+                <img src="images/form_controls_height.png">
             </article>
         </slide>
 
         <slide>
             <hgroup>
-                <h2>Form Controls: Grid Sizing</h2>
+                <h2>Form Controls: Sizing Width</h2>
             </hgroup>
             <article class="smaller">
 <pre class="prettyprint" data-lang="html">
-&lt;input class=&quot;<b>span1</b>&quot; type=&quot;text&quot; placeholder=&quot;.span1&quot;&gt;
-&lt;input class=&quot;<b>span2</b>&quot; type=&quot;text&quot; placeholder=&quot;.span2&quot;&gt;
-&lt;input class=&quot;<b>span3</b>&quot; type=&quot;text&quot; placeholder=&quot;.span3&quot;&gt;
-&lt;select class=&quot;<b>span1</b>&quot;&gt;&lt;/select&gt;
-&lt;select class=&quot;<b>span2</b>&quot;&gt;&lt;/select&gt;
-&lt;select class=&quot;<b>span3</b>&quot;&gt;&lt;/select&gt;
+&lt;div class="row"&gt;
+  &lt;div class="<b>col-xs-2</b>"&gt;
+    &lt;input type="text" class="form-control" placeholder=".col-xs-2"&gt;
+  &lt;/div&gt;
+  &lt;div class="<b>col-xs-3</b>"&gt;
+    &lt;input type="text" class="form-control" placeholder=".col-xs-3"&gt;
+  &lt;/div&gt;
+  &lt;div class="<b>col-xs-4</b>"&gt;
+    &lt;input type="text" class="form-control" placeholder=".col-xs-4"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </pre>
-                <img src="images/form_controls_grid.png">
+                <img src="images/form_controls_width.png">
             </article>
         </slide>
 
@@ -1407,9 +1054,10 @@ auctor fringilla.&lt;/p&gt;
             <aside class="note">
                 <section>
                     <ul>
-                        <li>Different Sizes</li>
-                        <li>Enabled / Disabled States</li>
-                        <li>One Button, many classes</li>
+                        <li>Different Sizes: .btn-lg, .btn-sm, or .btn-xs</li>
+                        <li>Enabled / Disabled States: .active and .disabled</li>
+                        <li>Block level buttons: .btn-block</li>
+                        <li>Use the button classes on an &lt;a>, &lt;button>, or &lt;input> element.</li>
                     </ul>
                 </section>
             </aside>
@@ -1424,38 +1072,42 @@ auctor fringilla.&lt;/p&gt;
 <pre class="prettyprint" data-lang="html">
 &lt;img src=&quot;...&quot; class=&quot;img-rounded&quot;&gt;
 &lt;img src=&quot;...&quot; class=&quot;img-circle&quot;&gt;
-&lt;img src=&quot;...&quot; class=&quot;img-polaroid&quot;&gt;
+&lt;img src=&quot;...&quot; class=&quot;img-thumbnail&quot;&gt;
 </pre>
                 <img src="images/images.png">
                 <br/><br/>
                 <footer class="source">
-                    <span class="red">.img-rounded and .img-circle do not work in IE7-8 due to lack of border-radius support.</span><br/><br/>
-                    Image Placeholders <a href="http://placehold.it/">http://placehold.it/</a></p>
+                    <span class="red">Keep in mind that Internet Explorer 8 lacks support for rounded corners.</span><br/><br/>
+                    Image Placeholders <a href="http://placehold.it/">http://placehold.it/</a>
                 </footer>
             </article>
         </slide>
 
         <slide>
             <hgroup>
-                <h2>Icons</h2>
+                <h2>Glyphicons</h2>
             </hgroup>
-            <article>
+            <article class="smaller">
 <pre class="prettyprint" data-lang="html">
-&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;icon-search icon-white&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;glyphicon glyphicon-search icon-white&quot;&gt;&lt;/i&gt;
 
-&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-user icon-white&quot;&gt;&lt;/i&gt; User&lt;/a&gt;
-&lt;a class=&quot;btn btn-small&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt; User&lt;/a&gt;
+&lt;a class=&quot;btn btn-sm&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 
-&lt;span class=&quot;add-on&quot;&gt;&lt;i class=&quot;icon-envelope&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-&lt;input class=&quot;span2&quot; id=&quot;inputIcon&quot; type=&quot;text&quot;&gt;
+&lt;span class=&quot;add-on&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-envelope&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 </pre>
                 <img src="images/icons.png">
-                <footer class="source">
-                    Full List of 140 Icons <a href="http://twitter.github.com/bootstrap/base-css.html#icons">http://twitter.github.com/bootstrap/base-css.html#icons</a>
+                <aside class="source" style="float: right; left: 600px; bottom: 100px">
+                    Full List of 200 Glyphicon Halflings <a href="http://getbootstrap.com/components/#glyphicons-glyphs">http://getbootstrap.com/components/#glyphicons-glyphs</a>
                     <br/><br/>
                     Compressed using ImageOptim <a href="http://imageoptim.com/">http://imageoptim.com/</a>
-                </footer>
+                </aside>
+                <aside class="note">
+                    <section>
+                        For performance reasons, all icons require a base class and individual icon class.
+                    </section>
+                </aside>
             </article>
         </slide>
 
@@ -1463,10 +1115,9 @@ auctor fringilla.&lt;/p&gt;
             <aside class="gdbar">
                 <img src="images/bootstrap_128.png">
             </aside>
-            <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=2219148434&k=m54KDHJ"
-               title="It was an epic sunset at Hanalei Bay at the St Regis pool :) Kauai, Hawaii" style="border: 0">
-                <img src="http://www.mcginityphoto.com/Nature/Nature/i-m54KDHJ/0/M/St%20Regis%20Pool-M.jpg"
-                     class="picture right" width="500" alt="It was an epic sunset at Hanalei Bay at the St Regis pool :) Kauai, Hawaii"></a>
+            <a href="http://www.flickr.com/photos/mcginityphoto/10322700916/" title="Ballynahinch Castle Ireland.jpg by McGinityPhoto, on Flickr">
+                <img src="http://farm8.staticflickr.com/7342/10322700916_88449ec9ea.jpg" width="500" class="picture right"
+                     alt="Ballynahinch Castle Ireland.jpg"></a>
             <hgroup class="auto-fadein">
                 <h1>
                     Components
@@ -1514,10 +1165,10 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;div class=&quot;btn-group&quot;&gt;
-    &lt;button class=&quot;btn&quot;&gt;1&lt;/button&gt;
-    &lt;button class=&quot;btn&quot;&gt;2&lt;/button&gt;
-    &lt;button class=&quot;btn&quot;&gt;3&lt;/button&gt;
+&lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-default"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default"&gt;Right&lt;/button&gt;
 &lt;/div&gt;
 </pre>
                 <img src="images/buttongroup.png">
@@ -1530,14 +1181,13 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;div class=&quot;btn-group&quot;&gt;
-&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;
-    Action
-    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
-&lt;/a&gt;
-&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"&gt;
+    Action &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" role="menu"&gt;
     &lt;!-- dropdown menu links --&gt;
-&lt;/ul&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
                 <img src="images/buttondropdown.png">
@@ -1548,18 +1198,25 @@ auctor fringilla.&lt;/p&gt;
             <hgroup>
                 <h2>Components: Navbar</h2>
             </hgroup>
-            <article>
+            <article class="smaller">
 <pre class="prettyprint" data-lang="html">
-&lt;div class=&quot;navbar&quot;&gt;
-  &lt;div class=&quot;navbar-inner&quot;&gt;
-    &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;Title&lt;/a&gt;
-    &lt;ul class=&quot;nav&quot;&gt;
-      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;nav class="navbar navbar-default" role="navigation"&gt;
+  &lt;div class="navbar-header"&gt;
+    &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"&gt;
+      &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class="navbar-brand" href="#"&gt;Brand&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="collapse navbar-collapse" id="navbar-collapse"&gt;
+    &lt;ul class="nav navbar-nav"&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
-&lt;/div&gt;     
+&lt;/nav&gt;
 </pre>
                 <img src="images/navbar.png">
             </article>
@@ -1571,12 +1228,10 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;ul class=&quot;nav nav-tabs&quot;&gt;
-&lt;li class=&quot;active&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;ul class="nav nav-tabs"&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Messages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
                 <img src="images/tabs.png">
@@ -1589,11 +1244,11 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;ul class=&quot;breadcrumb&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt; &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt; &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol class="breadcrumb"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
 </pre>
                 <img src="images/breadcrumbs.png">
             </article>
@@ -1605,16 +1260,15 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;div class=&quot;pagination&quot;&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
+&lt;ul class="pagination"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </pre>
                 <img src="images/pagination.png">
             </article>
@@ -1656,7 +1310,7 @@ auctor fringilla.&lt;/p&gt;
                    JavaScript for Bootstrap
                 </h1>
                 <h2>
-                   Bring Bootstrap's components to life—now with 13 custom jQuery plugins.
+                   Bring Bootstrap's components to life—now with 11 custom jQuery plugins.
                 </h2>
             </hgroup>
         </slide>
@@ -1693,7 +1347,6 @@ auctor fringilla.&lt;/p&gt;
                             <li>Alert</li>
                             <li>Collapse</li>
                             <li>Carousel</li>
-                            <li>Typeahead</li>
                             <li>Scrollspy / Affix</li>
                         </ul>
                     </li>   
@@ -1727,18 +1380,22 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;div class=&quot;modal hide fade&quot;&gt;
-    &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h3&gt;Modal header&lt;/h3&gt;
+&lt;div class="modal fade"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class="modal-title"&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;One fine body…&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Close&lt;/a&gt;
-        &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/a&gt;
-    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
             </article>
@@ -1748,7 +1405,7 @@ auctor fringilla.&lt;/p&gt;
             <hgroup>
                 <h2>JavaScript Plugins: Carousel</h2>
             </hgroup>
-            <article class="flexbox vcenter">
+            <article class="flexbox vcenter" style="margin-top: 15px">
                 <img src="images/carousel.png">
             </article>
         </slide>
@@ -1757,18 +1414,34 @@ auctor fringilla.&lt;/p&gt;
             <hgroup>
                 <h2>JavaScript Plugins: Carousel</h2>
             </hgroup>
-            <article>
+            <article class="smaller">
 <pre class="prettyprint" data-lang="html">
-&lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot;&gt;
-    &lt;!-- Carousel items --&gt;
-    &lt;div class=&quot;carousel-inner&quot;&gt;
-        &lt;div class=&quot;active item&quot;&gt;…&lt;/div&gt;
-        &lt;div class=&quot;item&quot;&gt;…&lt;/div&gt;
-        &lt;div class=&quot;item&quot;&gt;…&lt;/div&gt;
+&lt;div id="carousel-1" class="carousel slide" data-ride="carousel"&gt;
+  &lt;!-- Indicators --&gt;
+  &lt;ol class="carousel-indicators"&gt;
+    &lt;li data-target="#carousel-1" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+    &lt;li data-target="#carousel-1" data-slide-to="1"&gt;&lt;/li&gt;
+    &lt;li data-target="#carousel-1" data-slide-to="2"&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;!-- Wrapper for slides --&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="item active"&gt;
+      &lt;img src="..." alt="..."&gt;
+      &lt;div class="carousel-caption"&gt;
+        ...
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;!-- Carousel nav --&gt;
-    &lt;a class=&quot;carousel-control left&quot; href=&quot;#myCarousel&quot; data-slide=&quot;prev&quot;&gt;&amp;lsaquo;&lt;/a&gt;
-    &lt;a class=&quot;carousel-control right&quot; href=&quot;#myCarousel&quot; data-slide=&quot;next&quot;&gt;&amp;rsaquo;&lt;/a&gt;
+    ...
+  &lt;/div&gt;
+
+  &lt;!-- Controls --&gt;
+  &lt;a class="left carousel-control" href="#carousel-1" data-slide="prev"&gt;
+    &lt;span class="glyphicon glyphicon-chevron-left"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class="right carousel-control" href="#carousel-1" data-slide="next"&gt;
+    &lt;span class="glyphicon glyphicon-chevron-right"&gt;&lt;/span&gt;
+  &lt;/a&gt;
 &lt;/div&gt;
 </pre>
             </article>
@@ -1779,7 +1452,7 @@ auctor fringilla.&lt;/p&gt;
                 <h2>JavaScript Plugins: Popover</h2>
             </hgroup>
             <article class="flexbox vcenter">
-                <img src="images/popover.png">
+                <img src="images/popover_static.png">
             </article>
         </slide>
 
@@ -1789,17 +1462,12 @@ auctor fringilla.&lt;/p&gt;
             </hgroup>
             <article>
 <pre class="prettyprint" data-lang="html">
-&lt;a href=&quot;#&quot;
-      class=&quot;btn btn-large btn-danger&quot;
-      rel=&quot;popover&quot;
-      data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. right?&quot;
-      data-original-title=&quot;A Title&quot;&gt; 
-Click to toggle popover
-&lt;/a&gt;
+&lt;a href="#" class="btn btn-lg btn-danger" data-toggle="popover" title=""
+   data-content="And here's some amazing content. It's very engaging. right?"
+   data-original-title="A Title"&gt;Click to toggle popover&lt;/a&gt;
 </pre>
-            <footer class="source">
-                See it in action <a href="http://twitter.github.com/bootstrap/javascript.html#popovers">http://twitter.github.com/bootstrap/javascript.html#popovers</a>
-            </footer>
+                <img src="images/popover.png"/>
+                <img src="images/popover_on.png"/>
             </article>
         </slide>
 
@@ -1808,7 +1476,7 @@ Click to toggle popover
             <aside class="gdbar">
                 <img src="images/css3-logo-128.png">
             </aside>
-            <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=1917260655&k=5VzHM9P"
+            <a href="http://www.mcginityphoto.com/World/Oregon/i-5VzHM9P/A"
                title="Our hike along Ecola State Park ~ Indian Beach, Oregon" style="border: 0">
                 <img src="http://www.mcginityphoto.com/Nature/Nature/i-5VzHM9P/1/M/View%20from%20Ecola%20State%20Park%20Oregon-M.jpg"
                      class="right picture" alt="Our hike along Ecola State Park ~ Indian Beach, Oregon"></a>
@@ -1899,10 +1567,10 @@ Click to toggle popover
 
         <!-- LOOK AND FEEL -->
         <slide>
-            <a href="http://www.mcginityphoto.com/Nature/Colorado/21896375_jw7QCX#!i=2066655651&k=pzDkPhV"
-               title="View of Coors Field" style="border: 0">
-                <img src="http://www.mcginityphoto.com/Nature/Colorado/i-pzDkPhV/0/S/Inside%20Coors%20Field-S.jpg"
-                     class="right picture" style="margin-right: 20px; margin-top: 40px;" alt="View of Coors Field"></a>
+            <a href="http://www.mcginityphoto.com/World/Oregon/i-hNrNtFx/A"
+               title="Oregon Flowers" style="border: 0">
+                <img src="http://www.mcginityphoto.com/World/Oregon/i-hNrNtFx/0/S/poppyfieldoregon-S.jpg"
+                     class="right picture" style="margin-right: 20px; margin-top: 40px;" alt="Oregon Flowers"></a>
             <hgroup>
                 <h2>Look & Feel</h2>
             </hgroup>
@@ -1915,14 +1583,10 @@ Click to toggle popover
                         </ul>
                     </li>
                     <li>
-                        Bootswatch
+                        Bootswatch / Start Bootstrap / WrapBootstrap ($)
                         <ul>
                             <li><a href="http://bootswatch.com">http://bootswatch.com</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        WrapBootstrap
-                        <ul>
+                            <li><a href="http://startbootstrap.com/">http://startbootstrap.com</a></li>
                             <li><a href="https://wrapbootstrap.com/">https://wrapbootstrap.com</a></li>
                         </ul>
                     </li>
@@ -1938,27 +1602,6 @@ Click to toggle popover
                             <li><a href="http://fortawesome.github.com/Font-Awesome">http://fortawesome.github.com/Font-Awesome</a></li>
                         </ul>
                     </li>
-                </ul>
-            </article>
-        </slide>
-
-        <!-- Bootstrap 3 -->
-        <slide>
-            <hgroup>
-                <h2>Bootstrap 3</h2>
-            </hgroup>
-            <article>
-                <img src="https://f.cloud.github.com/assets/98681/319244/6f1846e4-98b7-11e2-98a7-c9804916d418.png"
-                     width="500" class="right" style="margin-top: -20px">
-                <ul>
-                    <li>Bootstrap 3 will be mobile-first</li>
-                </ul>
-                <ul class="build" style="line-height: 1.5em">
-                    <li>Overhaul CSS transitions and reinforce with JavaScript transitions as necessary</li>
-                    <li>Dropping IE7 and FF3.6 support</li>
-                    <li>Combining standard and responsive CSS into a single file</li>
-                    <li><a href="http://rc.getbootstrap.com">rc.getbootstrap.com</a> &rarr;
-                        <a href="https://github.com/twitter/bootstrap/pull/6342">github.com/twitter/bootstrap/pull/6342</a></li>
                 </ul>
             </article>
         </slide>
@@ -2002,8 +1645,6 @@ Click to toggle popover
                 <img src="images/smacss-naming.png" style="margin: -10px 0 20px 10px">
                 <ul style="line-height: 2em">
                     <li><a href="http://smacss.com/">http://smacss.com</a></li>
-                    <li>Jonathan Snook @ HTML5 Denver:
-                        <a href="http://www.meetup.com/HTML5-Denver-Users-Group/events/93212582/">June 17, 2013!</a></li>
                 </ul>
             </article>
             <aside class="note">
@@ -2013,129 +1654,6 @@ Click to toggle popover
                     the page.
                 </section>
             </aside>
-        </slide>
-
-        <!-- End of Story -->
-        <slide>
-            <hgroup>
-                <h2>UI Refresh Project, 1 Year Later</h2>
-                <h3>Mobile Improvements</h3>
-            </hgroup>
-            <article>
-<pre class="prettyprint" data-lang="css">
-    /* Smartphones (portrait and landscape) ----------- */
-    @media only screen and (min-device-width: 320px) and (max-device-width: 854px) {
-        body.mainPage.click-thru {
-            padding: 0;
-        }
-    }
-
-    /* iPad (portrait and landscape) ----------- */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-        body.mainPage.click-thru {
-            padding-top: 50px;
-        }
-    }
-</pre>
-            </article>
-            <aside class="note">
-                <section>
-                    <ul>
-                        <li>Viewport and CSS Media Queries</li>
-                    </ul>
-                </section>
-            </aside>
-        </slide>
-
-        <slide>
-            <hgroup>
-                <h2>UI Refresh Project, 1 Year Later</h2>
-                <h3>JavaScript PDF Viewer / Editor</h3>
-            </hgroup>
-            <article class="flexbox vcenter" style="margin-top: 0">
-                <img src="images/pdf-viewer.png" width="900">
-            </article>
-            <aside class="note">
-                <section>
-                    <ul>
-                        <li>Remove Flash</li>
-
-                    </ul>
-                </section>
-            </aside>
-        </slide>
-
-        <slide>
-            <hgroup>
-                <h2>UI Refresh Project, 1 Year Later</h2>
-                <h3>My Dashboard</h3>
-            </hgroup>
-            <article>
-                <img src="images/angularjs-large.png" class="right">
-                <ul style="line-height: 1.5em" class="build">
-                    <li>Charts and Widgets, Very Visual</li>
-                    <li>Built With:
-                        <ul>
-                            <li><a href="http://angularjs.org/">AngularJS</a></li>
-                            <li><a href="http://angular-ui.github.io/">AngularUI</a></li>
-                            <li><a href="http://angular-ui.github.io/bootstrap/">AngularUI Bootstrap</a></li>
-                        </ul>
-                    </li>
-                    <li>PDF Viewer: 200 lines HTML, 2300 lines of JavaScript</li>
-                    <li>My Dashboard: 300 lines HTML, 466 lines of JavaScript</li>
-                </ul>
-            </article>
-        </slide>
-
-        <!-- RESOURCES -->
-        <slide>
-            <hgroup>
-                <h2>Resources</h2>
-            </hgroup>
-            <article>
-                <a href="http://www.mcginityphoto.com/Nature/Nature/4725995_szrsM#!i=1500209706&k=WmPhrCk"
-                   title="Sunset next to the palm trees on the beach at Hanalei Bay Kauai, Hawaii" style="border: 0">
-                    <img src="http://www.mcginityphoto.com/Nature/Nature/i-WmPhrCk/2/M/DSC_7899-M.jpg"
-                         class="right picture" style="margin-right: 0" alt="Sunset next to the palm trees on the beach at Hanalei Bay Kauai, Hawaii"></a>
-                <ul style="max-width: 650px">
-                    <li>
-                        My Presentations
-                        <ul>
-                            <li><a href="http://raibledesigns.com/rd/page/publications">http://raibledesigns.com/rd/page/publications</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        Bootstrap
-                        <ul>
-                            <li><a href="http://twitter.github.com/bootstrap">GitHub Project</a> and <a href="http://bit.ly/KTUw1o">Google Group</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        Similar Frameworks
-                        <ul>
-                            <li><a href="http://foundation.zurb.com/">Zurb Foundation</a> and <a href="http://compass-style.org/">Compass</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        LESS CSS
-                        <ul>
-                            <li><a href="http://lesscss.org">http://lesscss.org</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        Google HTML5 Slides
-                        <ul>
-                            <li><a href="http://code.google.com/p/io-2012-slides">http://code.google.com/p/io-2012-slides</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        Dan Vega's Bootstrap 2 Presentation
-                        <ul>
-                            <li><a href="https://github.com/cfaddict/bootstrap2">https://github.com/cfaddict/bootstrap2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </article>
         </slide>
 
         <!-- THANK YOU / Questions -->

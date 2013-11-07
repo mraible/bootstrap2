@@ -1,4 +1,4 @@
-Refreshing Your UI with HTML5, Bootstrap and CSS3
+Bootstrap 3
 =======================================================================
 I delivered this presentation to the [HTML5 Denver Users Group](http://www.meetup.com/HTML5-Denver-Users-Group/events/93212272/) on April 22, 2013. If you'd like to read more about this session, see [My Bootstrap Presentation at HTML5 Denver](http://raibledesigns.com/rd/entry/my_bootstrap_presentation_from_html5).
 
