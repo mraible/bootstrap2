@@ -299,7 +299,7 @@ slides > slide.blue {
 /* line 171, ../scss/default.scss */
 slides > slide:not(.nobackground):before {
   font-size: 12pt;
-  content: "#dv13-javaweb$";
+  content: "#dv13javaweb$";
   position: absolute;
   bottom: 20px;
   left: 60px;
@@ -1441,6 +1441,10 @@ aside.gdbar img {
 
 .ireland-doublerainbow {
     background-image: url(http://farm6.staticflickr.com/5493/9827403195_1e211f6f23_b.jpg);
+}
+
+.thailand-park {
+    background-image: url(http://farm3.staticflickr.com/2871/10076904953_34cb763f5c_b.jpg);
 }
 
 .holland-lake {
