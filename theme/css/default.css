@@ -299,7 +299,7 @@ slides > slide.blue {
 /* line 171, ../scss/default.scss */
 slides > slide:not(.nobackground):before {
   font-size: 12pt;
-  content: "#DV13";
+  content: "";
   position: absolute;
   bottom: 20px;
   left: 60px;
